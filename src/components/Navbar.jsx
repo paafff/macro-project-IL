@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import ppSaya from '../assets/ppSaya.png';
-import { HiOutlineBeaker } from 'react-icons/hi';
+// import { HiOutlineBeaker } from 'react-icons/hi';
 
 // import {
 //   BsFacebook,
