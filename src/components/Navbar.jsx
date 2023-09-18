@@ -29,7 +29,8 @@ const Navbar = () => {
 
           {/* kanan */}
 
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block"> */}
+          <div className="">
             <div className="ml-5 flex items-baseline space-x-4">
               <Link
                 to={`/auth`}
