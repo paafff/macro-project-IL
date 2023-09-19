@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="">
             <div className="ml-5 flex items-baseline">
               <Link
-                to={`/ auth`}
+                to={`/auth`}
                 className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out mx-5"
               >
                 <div className="flex items-center">
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
               </Link>
               <Link
-                to={`/ about`}
+                to={`/about`}
                 className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out mx-5"
               >
                 <div className="flex items-center">
