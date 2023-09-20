@@ -57,14 +57,9 @@ const About = () => {
       <div className="my-2 text-center">
         <p className='font-semibold text-slate-100 tracking-wide'>{name.name}</p>
       </div>
-      {/* <div className='w-full flex justify-center'> */}
       <div className='my-3 rounded-md bg-slate-200 py-2 px-3 shadow-md '>
         <p className='text-sm text-slate-700'>{name.role}</p>
       </div>
-      <div>
-        <p>test</p>
-      </div>
-      {/* </div> */}
     </div>
   );
 
