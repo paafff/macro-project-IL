@@ -31,7 +31,7 @@ const Navbar = () => {
   })
 
   return (
-    <nav className={`bg-slate-200 fixed w-full duration-300 ${shadowNavbar ? "shadow-active" : " "}`}>
+    <nav className={`bg-slate-200 fixed w-full duration-300 z-10 ${shadowNavbar ? "shadow-active" : " "}`}>
       <div className="max-w-6xl mx-auto p-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-10">
           {/* kiri */}

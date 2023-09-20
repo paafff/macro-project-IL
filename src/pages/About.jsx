@@ -50,7 +50,7 @@ const developers = [
 const About = () => {
 
   const developer = developers.map(name =>
-    <div className='aspect-[12/16] lg:w-60 lg:mx-auto lg:my-auto md:my-auto bg-slate-700 rounded-md drop-shadow-2xl flex flex-col justify-center items-center p-5'>
+    <div className='aspect-[14/16] lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-700 rounded-lg drop-shadow-2xl flex flex-col justify-center items-center' key={name.id}>
       <div className='my-2'>
         <img className='w-20' src={name.profile} alt="" />
       </div>
@@ -58,14 +58,14 @@ const About = () => {
         <p className='font-semibold text-slate-100 tracking-wide'>{name.name}</p>
       </div>
       <div className='my-3 rounded-md bg-slate-200 py-2 px-3 shadow-md '>
-        <p className='text-sm text-slate-700'>{name.role}</p>
+        <p className='text-sm font-medium text-slate-700'>{name.role}</p>
       </div>
     </div>
   );
 
   return (
     <Layout>
-      <div className='min-h-screen pt-20 grid grid-cols-2 md:grid-cols-3 gap-2 p-2'>
+      <div className='min-h-screen pt-20 2xl:max-w-[60%] xl:max-w-[75%] xl:mx-auto xl:flex xl:flex-wrap grid grid-cols-2 md:grid-cols-3 gap-2 p-2'>
         {developer}
       </div>
       <div className='min-h-screen pt-16 flex justify-center items-center'>Ini buat test navbar</div>
