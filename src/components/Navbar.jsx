@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../dist/css/navbar.css';
 
 const Navbar = () => {
   const [shadowNavbar, setShadowNavbar] = useState(false);
@@ -19,9 +18,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-slate-200 fixed w-full duration-300 z-10 ${
-        shadowNavbar ? 'shadow-active' : ''
-      }`}
+      className={`bg-slate-200 w-full fixed  duration-300 z-10 ${shadowNavbar ? 'shadow-md shadow-slate-300 pt-4 pb-2.5' : ''
+        }`}
     >
       <div className="max-w-6xl mx-auto p-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-10">
