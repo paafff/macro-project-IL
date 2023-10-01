@@ -2,9 +2,9 @@ import React from 'react';
 import Layout from './Layout';
 
 import Section1Home from '../components/Section1Home'
-import Section2Home from '../components/Section2Home'
 import AlurPengaduanHome from '../components/AlurPengaduanHome'
 import Footer from '../components/Footer';
+import FAQ from '../components/FAQ';
 
 const Home = () => {
 
@@ -13,9 +13,9 @@ const Home = () => {
 
       <Section1Home />
 
-      <Section2Home />
-
       <AlurPengaduanHome />
+
+      <FAQ />
 
       <Footer />
 

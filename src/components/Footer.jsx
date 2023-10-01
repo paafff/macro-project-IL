@@ -1,47 +1,20 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faGithub, faInstagram, faDribbble } from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
     return (
-        <div className='w-full h-48 bg-slate-800 flex flex-row justify-around xl:px-48 text-white items-center p-4'>
-            <div className='flex items-center justify-center'>
-                <div className='w-16 h-16 bg-slate-200 flex items-center justify-center'>
-                    <p className='text-slate-800'>Logo</p>
-                </div>
+        <div className='w-full h-32 border-solid shadow-md bg-slate-200 flex flex-col lg:flex-row justify-around items-center py-4'>
+            <div className='flex mb-2'>
+                <p className='text-slate-800 font-medium text-base lg:text-lg'>&copy;2023 Invictus</p>
             </div>
-            <div className='flex items-center justify-center'>
-                <div className='mx-4 lg:mx-8'>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                </div>
-                <div className='mx-4 lg:mx-8'>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                </div>
-                <div className='mx-4 lg:mx-8'>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                    <div className='hover:cursor-pointer'>
-                        asdasd
-                    </div>
-                </div>
+            <div className='flex mt-2'>
+                <FontAwesomeIcon className='mx-4 hover:cursor-pointer hover:scale-150 transition' icon={faFacebook} size='lg' style={{ color: "#1e3051", }} />
+                <FontAwesomeIcon className='mx-4 hover:cursor-pointer hover:scale-150 transition' icon={faTwitter} size='lg' style={{ color: "#1e3051", }} />
+                <FontAwesomeIcon className='mx-4 hover:cursor-pointer hover:scale-150 transition' icon={faGithub} size='lg' style={{ color: "#1e3051", }} />
+                <FontAwesomeIcon className='mx-4 hover:cursor-pointer hover:scale-150 transition' icon={faInstagram} size='lg' style={{ color: "#1e3051", }} />
+                <FontAwesomeIcon className='mx-4 hover:cursor-pointer hover:scale-150 transition' icon={faDribbble} size='lg' style={{ color: "#1e3051", }} />
             </div>
         </div>
     )
