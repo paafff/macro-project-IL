@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faGithub, faInstagram, faDribbble } from '@forta
 
 const Footer = () => {
     return (
-        <div className='w-full h-32 border-solid shadow-md bg-slate-200 flex flex-col lg:flex-row justify-around items-center py-4'>
+        <div className='w-full h-32 border-solid shadow-md bg-[#F7F7F7] flex flex-col lg:flex-row justify-around items-center py-4'>
             <div className='flex mb-2'>
                 <p className='text-slate-800 font-medium text-base lg:text-lg'>&copy;2023 Invictus</p>
             </div>
