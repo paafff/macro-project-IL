@@ -81,6 +81,12 @@ const Navbar = () => {
             >
               Dashboard
             </Link>
+            <Link
+              to={`/pengaduan`}
+              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+            >
+              Pengaduan
+            </Link>
           </div>
         </div>
       </div>
@@ -112,6 +118,12 @@ const Navbar = () => {
               className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
               Dashboard
+            </Link>
+            <Link
+              to={`/pengaduan`}
+              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+            >
+              Pengaduan
             </Link>
           </div>
         </div>
