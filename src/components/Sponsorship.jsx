@@ -1,17 +1,19 @@
 import React from 'react'
 
-import ImagePolisi from '../assets/img/sponsorship/cnn.png'
+import ImagePolisi from '../assets/img/sponsorship/polisi.png'
+import ImageCNN from '../assets/img/sponsorship/cnn.png'
+import ImageKominfo from '../assets/img/sponsorship/kominfo.png'
+import ImageKompas from '../assets/img/sponsorship/kompas.png'
 
 const Sponsorship = () => {
     return (
-        <div className=''>
-            <p className='text-xl xl:text-4xl font-medium leading-tight font-regular underline underline-offset-4 text-center'>Sponsorship</p>
-            <div className='px-2 py-4 flex justify-center items-center gap-4'>
-                <img src={ImagePolisi} width={50} alt="" srcset="" />
-                <img src={ImagePolisi} width={50} alt="" srcset="" />
-                <img src={ImagePolisi} width={50} alt="" srcset="" />
-                <img src={ImagePolisi} width={50} alt="" srcset="" />
-                <img src={ImagePolisi} width={50} alt="" srcset="" />
+        <div className='flex flex-col py-32'>
+            <p className='text-xl xl:text-4xl pb-2.5 inline-block w-fit m-auto font-medium leading-tight font-semibold border-b-4 border-red-700 border-dashed'>Sponsorship</p>
+            <div className='px-2 py-20 flex justify-center items-center gap-8 md:gap-16 xl:gap-32'>
+                <img src={ImagePolisi} className='w-14 lg:w-20 xl:w-28' alt="" srcset="" />
+                <img src={ImageCNN} className='w-14 lg:w-20 xl:w-28' alt="" srcset="" />
+                <img src={ImageKominfo} className='w-14 lg:w-20 xl:w-28' alt="" srcset="" />
+                <img src={ImageKompas} className='w-14 lg:w-20 xl:w-28' alt="" srcset="" />
             </div>
         </div>
     )

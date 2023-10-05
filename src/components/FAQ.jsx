@@ -13,7 +13,7 @@ const FAQ = () => {
     return (
         <div className='min-h-fit w-full flex justify-center pb-24 pt-16 items-center flex-col p-2'>
 
-            <h1 className='text-2xl xl:text-3xl text-slate-800 font-bold mb-8 inline-block border-b-2 border-dashed border-red-700 w-fit'>FAQ</h1>
+            <h1 className='text-2xl xl:text-3xl text-slate-800 font-bold mb-8 pb-2.5 inline-block border-b-4 border-dashed border-red-700 w-fit'>FAQ</h1>
 
             <div className='w-full h-fit md:w-3/4 xl:w-1/2 bg-gray-100 shadow-lg p-4 flex flex-col transition-all ease-in-out delay-150 mb-4 border border-red-700 rounded-md'>
                 <div className='w-full flex'>

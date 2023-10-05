@@ -17,14 +17,12 @@ function CardAbout() {
 
     return (
         <>
-            <div className=''>
-                <div className="developer text-center">
-                    <p className='text-xl xl:text-4xl font-medium leading-tight font-regular underline underline-offset-4'>Para Tim Pengembang Kami</p>
-                </div>
+            <div className='w-full flex flex-col '>
+                <p className='text-xl xl:text-4xl inline-block w-fit m-auto font-medium leading-tight font-semibold border-b-4 pb-2.5 border-red-700 border-dashed'>Tim Pengembang</p>
                 <div className="min-h-screen 2xl:max-w-[60%] xl:max-w-[75%] xl:mx-auto xl:flex xl:flex-wrap grid grid-cols-2 md:grid-cols-3 gap-2 p-2 pt-20 mb-24">
 
                     <div
-                        className="md:aspect-[12/16]  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className='w-32' src={ImageRafael} alt="image profile of rafael" />
                         </div>
@@ -34,14 +32,14 @@ function CardAbout() {
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="text-sm text-center font-regular text-slate-700">Hustler / Project Manager</p>
+                            <p className="text-sm text-center font-regular text-slate-700">Project Manager</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
                             <FontAwesomeIcon onClick={() => link('https://www.instagram.com/raf_rap')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
                         </div>
                     </div>
                     <div
-                        className="md:aspect-[12/16]  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className="w-24" src={ImageIlham} alt="image profile of ilham" />
                         </div>
@@ -51,7 +49,7 @@ function CardAbout() {
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="text-sm text-center font-regular text-slate-700">Hacker / Coder</p>
+                            <p className="text-sm text-center font-regular text-slate-700">UI UX Designer / Coder</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
                             <FontAwesomeIcon onClick={() => link('http://instagram.com/ilhamsoejud')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
@@ -64,7 +62,7 @@ function CardAbout() {
                         </div>
                     </div>
                     <div
-                        className="md:aspect-[12/16]  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className=" w-32" src={ImageProfile} alt="" />
                         </div>
@@ -83,7 +81,7 @@ function CardAbout() {
                         </div>
                     </div>
                     <div
-                        className="md:aspect-[12/16]  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className=" w-32" src={ImageProfile} alt="" />
                         </div>
@@ -93,7 +91,7 @@ function CardAbout() {
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="text-sm text-center font-regular text-slate-700">Hipster / Designer</p>
+                            <p className="text-sm text-center font-regular text-slate-700">UI UX Designer</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
                             <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
@@ -102,7 +100,7 @@ function CardAbout() {
                         </div>
                     </div>
                     <div
-                        className="md:aspect-[12/16]  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className="xl:w-44 w-32 " src={ImageTania} alt="" />
                         </div>
@@ -112,14 +110,14 @@ function CardAbout() {
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="text-sm text-center font-regular text-slate-700">Hipster / Designer</p>
+                            <p className="text-sm text-center font-regular text-slate-700">UI UX Designer</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
                             <FontAwesomeIcon onClick={() => link('https://www.instagram.com/taniaftrr_')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
                         </div>
                     </div>
                     <div
-                        className="md:aspect-[12/16]  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className=" w-32" src={ImageGilang} alt="" />
                         </div>
@@ -129,7 +127,7 @@ function CardAbout() {
                             </p>
                         </div>
                         <div className="my-2">
-                            <p className="text-sm text-center font-regular text-slate-700">Hipster / Designer</p>
+                            <p className="text-sm text-center font-regular text-slate-700">UI UX Designer</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
                             <FontAwesomeIcon onClick={() => link('https://www.instagram.com/alwafi1503/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
