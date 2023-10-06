@@ -1,12 +1,24 @@
 import React from 'react';
 import Layout from './Layout';
 
+import Section1Home from '../components/Section1Home'
+import AlurPengaduanHome from '../components/AlurPengaduanHome'
+import Footer from '../components/Footer';
+import FAQ from '../components/FAQ';
+
 const Home = () => {
+
   return (
     <Layout>
-      {/* <div>home</div> */}
-      <div className='min-h-screen -pt-20 flex justify-center items-center'>ini buat home</div>
-      {/* <div className='min-h-screen pt-16 flex justify-center items-center'>ini buat test navbar</div> */}
+
+      <Section1Home />
+
+      <AlurPengaduanHome />
+
+      <FAQ />
+
+      <Footer />
+
     </Layout>
   );
 };

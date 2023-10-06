@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../assets/image/gelap.PNG';
-import '../dist/css/navbar.css';
 import { useSelector } from 'react-redux';
 import notifDropdown from './notifDropdown';
 
@@ -62,9 +61,9 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d={
                     menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16m-7 6h7'
                   }
@@ -347,6 +346,18 @@ const Navbar = () => {
               className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
               Tentang
+            </Link>
+            <Link
+              to={`/dashboard`}
+              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+            >
+              Dashboard
+            </Link>
+            <Link
+              to={`/pengaduan`}
+              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+            >
+              Pengaduan
             </Link>
           </div>
         </div>
