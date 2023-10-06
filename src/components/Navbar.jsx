@@ -14,6 +14,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', changeShadowNavbar);
     };
+
   }, []);
 
   return (
@@ -87,6 +88,7 @@ const Navbar = () => {
             >
               Pengaduan
             </Link>
+
           </div>
         </div>
       </div>

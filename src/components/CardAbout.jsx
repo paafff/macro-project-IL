@@ -22,7 +22,7 @@ function CardAbout() {
                 <div className="min-h-screen 2xl:max-w-[60%] xl:max-w-[75%] xl:mx-auto xl:flex xl:flex-wrap grid grid-cols-2 md:grid-cols-3 gap-2 p-2 pt-20 mb-24">
 
                     <div
-                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+                        className="md:aspect-[12/16] shadow-xl  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col " >
                         <div className="bg-slate-50 h-3/4 rounded-lg flex justify-center items-center">
                             <img className='w-32' src={ImageRafael} alt="image profile of rafael" />
                         </div>
