@@ -273,7 +273,7 @@ const ReportForm = () => {
           <h2 className="font-sans font-bold break-normal text-gray-900 py-1 text-2xl">
             Data Korban
           </h2>
-          <hr className='bg-red-700 py-[1px] mb-5'/>
+          <hr className='bg-red-700 py-[1px] mb-5' />
           <form onSubmit={handleSubmit}>
             {/* sample gunakan div */}
             {/* Judul Laporan */}
@@ -319,9 +319,9 @@ const ReportForm = () => {
                       judulLaporan: e.target.value,
                     })
                   }
-                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
+                  className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500  w-full p-2 "
                   placeholder="Judul Laporan"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -345,7 +345,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nama Korban"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -461,7 +461,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nomer Identitas"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -491,7 +491,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept="image/*"
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -689,7 +689,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                  // required
+                // required
                 />
                 <input
                   type="number"
@@ -699,7 +699,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -726,7 +726,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="No. HP"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -735,7 +735,7 @@ const ReportForm = () => {
             <h2 className="font-sans font-bold break-normal text-gray-900  py-1 text-2xl">
               Deskripsi Kejadian
             </h2>
-            <hr className='bg-red-700 py-[1px] mb-5'/>
+            <hr className='bg-red-700 py-[1px] mb-5' />
             {/* Kronologi */}
             <div className="flex mb-6">
               <span className="md:w-1/3">
@@ -758,8 +758,8 @@ const ReportForm = () => {
                     })
                   }
                   rows="5"
-                  placeholder=" Jelaskan kronologi kejadian sedetail mungkin"
-                  // required
+                  placeholder="Kronologi"
+                // required
                 ></textarea>
               </span>
             </div>
@@ -953,7 +953,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                  // required
+                // required
                 />
                 <input
                   type="number"
@@ -966,7 +966,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -995,7 +995,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept=""
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -1033,7 +1033,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder=" Harapan pengadu"
-                  // required
+                // required
                 ></textarea>
               </span>
             </div>
@@ -1047,7 +1047,7 @@ const ReportForm = () => {
                   name="remember_me"
                   id="remember_me"
                   className="mr-2 focus:ring-0 rounded"
-                  // required
+                // required
                 />
                 <label className="mb-4 text-sm font-medium text-gray-900 ">
                   Saya bertanggung jawab atas pernyataan saya diatas

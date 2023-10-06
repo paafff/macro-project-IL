@@ -1,10 +1,10 @@
 import React from 'react'
-import ImageProfile from '../assets/img/profile-male.png';
+import ImageProfile from '../assets/image/profile-male.png';
 
-import ImageRafael from '../assets/img/profile_picture/Rafael_Kesma.png'
-import ImageIlham from '../assets/img/profile_picture/ilham(2).png'
-import ImageTania from '../assets/img/profile_picture/tania.png'
-import ImageGilang from '../assets/img/profile_picture/gilang.png'
+import ImageRafael from '../assets/image/profile_picture/Rafael_Kesma.png'
+import ImageIlham from '../assets/image/profile_picture/ilham(2).png'
+import ImageTania from '../assets/image/profile_picture/tania.png'
+import ImageGilang from '../assets/image/profile_picture/gilang.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faFacebook, faLinkedin, faGitlab } from '@fortawesome/free-brands-svg-icons';

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import ImagePolisi from '../assets/img/sponsorship/polisi.png'
-import ImageCNN from '../assets/img/sponsorship/cnn.png'
-import ImageKominfo from '../assets/img/sponsorship/kominfo.png'
-import ImageKompas from '../assets/img/sponsorship/kompas.png'
+import ImagePolisi from '../assets/image/sponsorship/polisi.png'
+import ImageCNN from '../assets/image/sponsorship/cnn.png'
+import ImageKominfo from '../assets/image/sponsorship/kominfo.png'
+import ImageKompas from '../assets/image/sponsorship/kompas.png'
 
 const Sponsorship = () => {
     return (

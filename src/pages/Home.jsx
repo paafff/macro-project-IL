@@ -17,8 +17,6 @@ const Home = () => {
 
       <FAQ />
 
-      <Footer />
-
     </Layout>
   );
 };

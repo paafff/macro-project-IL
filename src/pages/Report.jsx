@@ -7,10 +7,7 @@ const Report = () => {
     <Layout>
       <div className='pt-20'>
 
-      <ReportForm />
-      <div className="min-h-screen pt-0 flex justify-center items-center">
-        Ini buat test navbar
-      </div>
+        <ReportForm />
       </div>
     </Layout>
   );

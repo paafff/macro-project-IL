@@ -25,9 +25,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-customGray w-full fixed duration-1000 z-10 ${
-        shadowNavbar ? ' shadow-md shadow-red-900 pt-4 pb-2.5' : 'py-2'
-      }`}
+      className={`bg-customGray w-full fixed duration-1000 z-10 ${shadowNavbar ? ' shadow-md shadow-red-900 pt-4 pb-2.5' : 'py-2'
+        }`}
     >
       {/* 
      <nav
@@ -132,7 +131,7 @@ const Navbar = () => {
                 Tentang
               </Link>
               <Link
-                to={`/about`}
+                to={`/pengaduan`}
                 className="capitalize
                 inline-block
                 text-2xl
@@ -190,7 +189,7 @@ const Navbar = () => {
 
               {/* notiffffff */}
               <div class="group inline-block relative">
-                <MdOutlineNotificationsActive className="scale-[2] cursor-pointer" />
+                <MdOutlineNotificationsActive style={{ color: "#FFFFFF", }} className="scale-[2] cursor-pointer" />
 
                 <ul class="absolute bg-none rounded-lg hidden text-gray-900 w-80 pt-2.5 group-hover:block">
                   {/* <div class=" "> */}

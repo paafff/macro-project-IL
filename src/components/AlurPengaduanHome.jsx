@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ImageAlur from '../assets/img/alur.png'
+import ImageAlur from '../assets/image/alur.png'
 
 function AlurPengaduanHome() {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import ImageHero from '../assets/img/hero-section1-homepage.jpg'
+import ImageHero from '../assets/image/hero-section1-homepage.jpg'
 
 const Section1Home = () => {
     return (
