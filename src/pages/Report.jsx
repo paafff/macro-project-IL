@@ -1,11 +1,17 @@
 import React from 'react';
 import Layout from './Layout';
+import ReportForm from '../components/ReportForm';
 
 const Report = () => {
   return (
     <Layout>
-      <div className='min-h-screen pt-16 flex justify-center items-center'>ini buat form laporan</div>
-      <div className='min-h-screen pt-16 flex justify-center items-center'>Ini buat test navbar</div>
+      <div className='pt-20'>
+
+      <ReportForm />
+      <div className="min-h-screen pt-0 flex justify-center items-center">
+        Ini buat test navbar
+      </div>
+      </div>
     </Layout>
   );
 };

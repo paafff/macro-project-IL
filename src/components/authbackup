@@ -28,20 +28,20 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="w-80 p-4 bg-none border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 ">
+      <div className="w-80 p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 ">
         {/* {message && <p>{message}</p>} */}
-        <h5 className=" text-xl font-medium text-gray-900 text-center ">Masuk</h5>
-        <hr className='py-1'/>
+        <h5 className=" text-xl font-medium text-gray-900 ">Form Login</h5>
+        <br />
         <form className="space-y-2" onSubmit={handleSubmit}>
           <div>
             <label className=" mb-1 text-sm font-medium text-gray-900 ">
-              Email
+              Your Email
             </label>
             <input
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500  w-full p-2  "
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2  "
               placeholder="name@email.com"
               required
             />
@@ -49,27 +49,27 @@ const LoginForm = () => {
 
           <div>
             <label className=" mb-1 text-sm font-medium text-gray-900 ">
-              Kata Sandi
+              Password
             </label>
             <input
               type="password"
               onChange={(e) => setPassword(e.target.value)}
-              className=" bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500  w-full p-2  "
+              className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2  "
               placeholder="********"
               required
             />
           </div>
-          <hr className='py-1'/>
+          <br />
 
           <div className="flex  items-center">
             <label className="mb-1 text-sm font-regular text-gray-900 ">
-              Lupa kata sandi?
+              Lupa Password?
               <a
                 href="#"
                 className="text-blue-600 font-regular hover:text-blue-700 hover:underline"
               >
                 {' '}
-                klik disini
+                Klik Disini
               </a>
             </label>
           </div>
@@ -77,7 +77,7 @@ const LoginForm = () => {
           <div className=" ">
             <button
               type="submit"
-              className=" w-full text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+              className=" w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
             >
               Login
             </button>
@@ -89,3 +89,16 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
