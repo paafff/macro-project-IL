@@ -761,7 +761,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder="Uraikan secara rinci kejadian yang dialami korban (ciri-ciri pelaku, waktu kejadian, lokasi kejadian)"
-                  // required
+
                 ></textarea>
               </span>
             </div>
