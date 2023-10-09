@@ -255,7 +255,7 @@ const ReportForm = () => {
     };
     dispatch(addReport(newReport));
 
-    navigate('/reports');
+    navigate('/pengaduan');
   };
 
   return (
@@ -471,7 +471,7 @@ const ReportForm = () => {
 
             {/* Unggah identitas korban */}
             <div className="md:flex mb-6">
-              <div className="md:w-1/3 lg:w-1/4">
+              <div className="md:w-1/4 lg:w-1/4">
                 <label
                   className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-file"
@@ -479,7 +479,7 @@ const ReportForm = () => {
                   Unggah identitas korban
                 </label>
               </div>
-              <div className="md:w-2/3 lg:w-3/4">
+              <div className="md:w-3/4 lg:w-3/4">
                 <input
                   type="file"
                   multiple
@@ -975,7 +975,7 @@ const ReportForm = () => {
             </div>
             {/* Dokumen Pendukung */}
             <div className="md:flex mb-6">
-              <div className="md:w-1/3 lg:w-1/4">
+              <div className="md:w-1/4 lg:w-1/4">
                 <label
                   className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-file"
@@ -983,7 +983,7 @@ const ReportForm = () => {
                   Dokumen Pendukung
                 </label>
               </div>
-              <div className="md:w-2/3 lg:w-3/4">
+              <div className="md:w-3/4 lg:w-3/4">
                 <input
                   type="file"
                   multiple
