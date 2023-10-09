@@ -182,7 +182,7 @@ const Navbar = () => {
 
                 <ul class="absolute drop-shadow-lg bg-[#F7F7F7] rounded-lg hidden text-slate-700 w-80 mt-1 pt-2.5 group-hover:block">
                   {/* <div class=" "> */}
-                  <Link class="flex px-4 py-3 bg-white hover:bg-slate-100 rounded-t-lg  align-midle justify-between ">
+                  <Link class="flex px-4 py-3 bg-white hover:bg-[#F7F7F7] rounded-t-lg  align-midle justify-between ">
                     <div class="flex self-center">
                       <MdOutlineSms className=" scale-[1.5]" />
                     </div>
@@ -193,7 +193,7 @@ const Navbar = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link class="flex px-4 py-3 bg-white hover:bg-slate-100  align-midle justify-between ">
+                  <Link class="flex px-4 py-3 bg-white hover:bg-[#F7F7F7]  align-midle justify-between ">
                     <div class="flex self-center">
                       <MdOutlineSms className="scale-[1.5]" />
                     </div>
@@ -204,7 +204,7 @@ const Navbar = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link class="flex px-4 py-3 bg-white hover:bg-slate-100 rounded-b-lg  align-midle justify-between ">
+                  <Link class="flex px-4 py-3 bg-white hover:bg-[#F7F7F7] rounded-b-lg  align-midle justify-between ">
                     <div class="flex self-center">
                       <MdOutlineSms className=" scale-[1.5]" />
                     </div>

@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
 
-import CardPengaduan from '../components/CardPengaduan';
-
 const Pengaduan = () => {
-
 
     const reports = useSelector((state) => state.report); // 'report' sesuai dengan nama slice yang Anda gunakan
     const user = useSelector((state) => state.login);
@@ -69,6 +66,7 @@ const Pengaduan = () => {
                                     ></textarea>
                                 </div>
                             </div>
+                            <p className='text-sm text-gray-400 text-end'>01 - 10 - 2023</p>
                         </div>
                     </div>
 
@@ -114,6 +112,7 @@ const Pengaduan = () => {
                                     ></textarea>
                                 </div>
                             </div>
+                            <p className='text-sm text-gray-400 text-end'>09 - 10 - 2023</p>
                         </div>
                     </div>
 
@@ -159,6 +158,7 @@ const Pengaduan = () => {
                                     ></textarea>
                                 </div>
                             </div>
+                            <p className='text-sm text-gray-400 text-end'>23 - 10 - 2023</p>
                         </div>
                     </div>
 

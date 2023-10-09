@@ -3,8 +3,8 @@ import ImageProfile from '../assets/image/profile-male.png';
 
 import ImageRafael from '../assets/image/profile_picture/Rafael_Kesma.png'
 import ImageIlham from '../assets/image/profile_picture/ilham(2).png'
-import ImageTania from '../assets/image/profile_picture/tania.png'
-import ImageGilang from '../assets/image/profile_picture/gilang.png'
+import ImageTania from '../assets/image/profile_picture/tania.jpg'
+import ImageGilang from '../assets/image/profile_picture/gilang.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faFacebook, faLinkedin, faGitlab } from '@fortawesome/free-brands-svg-icons';
@@ -36,6 +36,8 @@ function CardAbout() {
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
                             <FontAwesomeIcon onClick={() => link('https://www.instagram.com/raf_rap')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+                            <FontAwesomeIcon onClick={() => link('https://github.com/IlhamSoejudAlkahfiardy')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
+                            <FontAwesomeIcon onClick={() => link('https://github.com/IlhamSoejudAlkahfiardy')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
                         </div>
                     </div>
                     <div
@@ -58,7 +60,7 @@ function CardAbout() {
 
                             <FontAwesomeIcon onClick={() => link('https://www.linkedin.com/in/ilhamsoejudalkahfiardy/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faLinkedin} style={{ color: "#2071fe", }} />
 
-                            <FontAwesomeIcon onClick={() => link('https://gitlab.com/alkahfiardyIlhamSoejud')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGitlab} style={{ color: "#2071fe", }} />
+
                         </div>
                     </div>
                     <div
@@ -75,9 +77,11 @@ function CardAbout() {
                             <p className="text-sm text-center font-regular text-slate-700">Hacker / Coder</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
-                            <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
-                            <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
-                            <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faFacebook} style={{ color: "#2071fe", }} />
+                            <FontAwesomeIcon onClick={() => link('http://instagram.com/ilhamsoejud')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+
+                            <FontAwesomeIcon onClick={() => link('https://github.com/IlhamSoejudAlkahfiardy')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
+
+                            <FontAwesomeIcon onClick={() => link('https://www.linkedin.com/in/ilhamsoejudalkahfiardy/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faLinkedin} style={{ color: "#2071fe", }} />
                         </div>
                     </div>
                     <div
@@ -94,9 +98,11 @@ function CardAbout() {
                             <p className="text-sm text-center font-regular text-slate-700">UI UX Designer</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
-                            <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
-                            <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
-                            <FontAwesomeIcon className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faFacebook} style={{ color: "#2071fe", }} />
+                            <FontAwesomeIcon onClick={() => link('http://instagram.com/ilhamsoejud')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+
+                            <FontAwesomeIcon onClick={() => link('https://github.com/IlhamSoejudAlkahfiardy')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
+
+                            <FontAwesomeIcon onClick={() => link('https://www.linkedin.com/in/ilhamsoejudalkahfiardy/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faLinkedin} style={{ color: "#2071fe", }} />
                         </div>
                     </div>
                     <div
@@ -113,7 +119,11 @@ function CardAbout() {
                             <p className="text-sm text-center font-regular text-slate-700">UI UX Designer</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
-                            <FontAwesomeIcon onClick={() => link('https://www.instagram.com/taniaftrr_')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+                            <FontAwesomeIcon onClick={() => link('http://instagram.com/ilhamsoejud')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+
+                            <FontAwesomeIcon onClick={() => link('https://github.com/IlhamSoejudAlkahfiardy')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
+
+                            <FontAwesomeIcon onClick={() => link('https://www.linkedin.com/in/ilhamsoejudalkahfiardy/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faLinkedin} style={{ color: "#2071fe", }} />
                         </div>
                     </div>
                     <div
@@ -130,7 +140,11 @@ function CardAbout() {
                             <p className="text-sm text-center font-regular text-slate-700">UI UX Designer</p>
                         </div>
                         <div className="my-4 flex justify-center gap-4 pb-4">
-                            <FontAwesomeIcon onClick={() => link('https://www.instagram.com/alwafi1503/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+                            <FontAwesomeIcon onClick={() => link('http://instagram.com/ilhamsoejud')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faInstagram} style={{ color: "#e123de", }} />
+
+                            <FontAwesomeIcon onClick={() => link('https://github.com/IlhamSoejudAlkahfiardy')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faGithub} />
+
+                            <FontAwesomeIcon onClick={() => link('https://www.linkedin.com/in/ilhamsoejudalkahfiardy/')} className='hover:scale-150 transition ease-in-out hover:cursor-pointer' size="lg" icon={faLinkedin} style={{ color: "#2071fe", }} />
 
                         </div>
                     </div>
