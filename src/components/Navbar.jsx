@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-customGray w-full fixed duration-300 z-10 ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
+      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
         }`}
     >
       {/* 

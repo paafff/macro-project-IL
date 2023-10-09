@@ -6,3 +6,7 @@
   font-family: inter;
   src: url(./assets/fonts/Inter-Black.ttf);
 }
+@font-face {
+  font-family: montserrat;
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
