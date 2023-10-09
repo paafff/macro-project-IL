@@ -10,7 +10,6 @@ const Dashboard = () => {
     return (
         <Layout>
             <BiodataDashboard />
-            <Footer />
         </Layout>
 
     )

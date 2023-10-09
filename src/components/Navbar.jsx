@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './../assets/image/gelap.PNG';
+import logo from './../assets/image/terang.png';
 import { useSelector } from 'react-redux';
 import notifDropdown from './notifDropdown';
 
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-customGray w-full fixed duration-1000 z-10 ${shadowNavbar ? ' shadow-md shadow-red-900 pt-4 pb-2.5' : 'py-2'
+      className={`bg-customGray w-full fixed duration-300 z-10 ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
         }`}
     >
       {/* 
@@ -35,7 +35,7 @@ const Navbar = () => {
       }`}
     >
        */}
-      <div className="max-w-6xl mx-auto p-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-10">
           {/* Kiri */}
           <div className="flex items-center">
@@ -73,32 +73,21 @@ const Navbar = () => {
 
           {/* Kanan (untuk perangkat desktop) */}
           {user[0] ? (
-            <div className="hidden md:flex flex-grow items-center justify-end space-x-5">
+            <div className="hidden md:flex flex-grow items-center justify-end space-x-14">
               <Link
                 to={`/report`}
-                className="capitalize
-              inline-block
-              text-2xl
-              relative
-              cursor-pointer
-              transition-all
-              duration-500
-              before:content-['']
-              before:absolute
-              before:-bottom-2
-              before:left-0
-              before:w-0
-              before:h-1.5
-              before:rounded-full
-              before:opacity-0
-              before:transition-all
-              before:duration-500
-              before:bg-gradient-to-r
-              before:from-red-700
-              before:via-red-700
-              before:to-red-700
-              hover:before:w-full
-              hover:before:opacity-100"
+                className="py-1
+                px-4
+                rounded-md
+            text-xl
+            text-red-700
+            border
+            border-red-700
+            cursor-pointer
+            transition-all
+            duration-500
+            hover:text-[#F7F7F7]
+            hover:bg-red-700"
               >
                 Lapor !
               </Link>
@@ -106,7 +95,7 @@ const Navbar = () => {
                 to={`/about`}
                 className="capitalize
                 inline-block
-                text-2xl
+                text-xl
                 relative
                 cursor-pointer
                 transition-all
@@ -116,7 +105,7 @@ const Navbar = () => {
                 before:-bottom-2
                 before:left-0
                 before:w-0
-                before:h-1.5
+                before:h-1
                 before:rounded-full
                 before:opacity-0
                 before:transition-all
@@ -134,7 +123,7 @@ const Navbar = () => {
                 to={`/pengaduan`}
                 className="capitalize
                 inline-block
-                text-2xl
+                text-xl
                 relative
                 cursor-pointer
                 transition-all
@@ -144,7 +133,7 @@ const Navbar = () => {
                 before:-bottom-2
                 before:left-0
                 before:w-0
-                before:h-1.5
+                before:h-1
                 before:rounded-full
                 before:opacity-0
                 before:transition-all
@@ -162,7 +151,7 @@ const Navbar = () => {
                 to={`/dashboard`}
                 className="capitalize
                 inline-block
-                text-2xl
+                text-xl
                 relative
                 cursor-pointer
                 transition-all
@@ -172,7 +161,7 @@ const Navbar = () => {
                 before:-bottom-2
                 before:left-0
                 before:w-0
-                before:h-1.5
+                before:h-1
                 before:rounded-full
                 before:opacity-0
                 before:transition-all
@@ -189,7 +178,7 @@ const Navbar = () => {
 
               {/* notiffffff */}
               <div class="group inline-block relative">
-                <MdOutlineNotificationsActive style={{ color: "#FFFFFF", }} className="scale-[2] cursor-pointer" />
+                <MdOutlineNotificationsActive style={{ color: "#1a1a1a", }} className="scale-[1.5] cursor-pointer" />
 
                 <ul class="absolute bg-none rounded-lg hidden text-gray-900 w-80 pt-2.5 group-hover:block">
                   {/* <div class=" "> */}
@@ -232,41 +221,33 @@ const Navbar = () => {
               {/* notiffffff */}
             </div>
           ) : (
-            <div className="hidden md:flex flex-grow items-center justify-end space-x-5">
+            <div className="hidden md:flex flex-grow items-center justify-end space-x-14">
               <Link
                 to={'/report'}
-                className="capitalize
-            inline-block
-            text-2xl
-            relative
+                className="
+                py-1
+                px-4
+                rounded-md
+            text-xl
+            text-red-700
+            border
+            border-red-700
             cursor-pointer
             transition-all
             duration-500
-            before:content-['']
-            before:absolute
-            before:-bottom-2
-            before:left-0
-            before:w-0
-            before:h-1.5
-            before:rounded-full
-            before:opacity-0
-            before:transition-all
-            before:duration-500
-            before:bg-gradient-to-r
-            before:from-red-700
-            before:via-red-700
-            before:to-red-700
-            hover:before:w-full
-            hover:before:opacity-100"
+            hover:text-[#F7F7F7]
+            hover:bg-red-700
+           "
               >
                 Lapor !
               </Link>
+
               <Link
                 to={`/about`}
                 // href="/about"
                 className="capitalize
               inline-block
-              text-2xl
+              text-xl
               relative
               cursor-pointer
               transition-all
@@ -276,7 +257,7 @@ const Navbar = () => {
               before:-bottom-2
               before:left-0
               before:w-0
-              before:h-1.5
+              before:h-1
               before:rounded-full
               before:opacity-0
               before:transition-all
@@ -291,34 +272,25 @@ const Navbar = () => {
                 Tentang
               </Link>
 
+
               <Link
                 to={`/auth`}
-                className="capitalize
-              inline-block
-              text-2xl
-              relative
+                className="
+                py-1
+                px-4
+                rounded-md
+                bg-red-700
+                text-[#F7F7F7]
+              text-xl
               cursor-pointer
               transition-all
               duration-500
-              before:content-['']
-              before:absolute
-              before:-bottom-2
-              before:left-0
-              before:w-0
-              before:h-1.5
-              before:rounded-full
-              before:opacity-0
-              before:transition-all
-              before:duration-500
-              before:bg-gradient-to-r
-              before:from-red-700
-              before:via-red-700
-              before:to-red-700
-              hover:before:w-full
-              hover:before:opacity-100"
+              hover:bg-red-800
+              "
               >
                 Masuk
               </Link>
+
             </div>
           )}
         </div>
@@ -327,34 +299,34 @@ const Navbar = () => {
       {/* Menu dropdown untuk perangkat mobile */}
       {menuOpen && (
         <div className="md:hidden">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-start py-4 shadow-md">
             <Link
               to={`/auth`}
-              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
               Masuk
             </Link>
             <Link
               to={'/report'}
-              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
               Pengaduan
             </Link>
             <Link
               to={`/about`}
-              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
               Tentang
             </Link>
             <Link
               to={`/dashboard`}
-              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
-              Dashboard
+              Profile
             </Link>
             <Link
               to={`/pengaduan`}
-              className="text-lg text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
             >
               Pengaduan
             </Link>

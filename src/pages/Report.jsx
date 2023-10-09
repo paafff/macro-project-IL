@@ -5,7 +5,7 @@ import ReportForm from '../components/ReportForm';
 const Report = () => {
   return (
     <Layout>
-      <div className='pt-20'>
+      <div className=''>
 
         <ReportForm />
       </div>
