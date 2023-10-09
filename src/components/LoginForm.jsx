@@ -19,7 +19,7 @@ const LoginForm = () => {
       alert('maaf gagal');
     } else {
       const newLogin = {
-        username: '',
+        username: 'patrickStar',
         email: email,
         password: password,
       };
@@ -28,7 +28,6 @@ const LoginForm = () => {
       navigate('/');
     }
   };
-
 
   return (
     <>
