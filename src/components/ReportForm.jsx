@@ -255,27 +255,28 @@ const ReportForm = () => {
     };
     dispatch(addReport(newReport));
 
-    navigate('/reports');
+    navigate('/pengaduan');
   };
 
   return (
     <>
-      <div className="mx-auto w-2/4">
+      <div className="mx-auto w-full lg:w-3/4 xl:w-1/2 py-32">
         {/* <!--Title--> */}
         {/* <h2 className="font-sans font-bold break-normal text-gray-900  py-4 text-2xl text-center">
             Form Pengaduan
           </h2> */}
         <div className="first-text mb-4 flex justify-center items-center">
-          <p className="text-xl xl:text-4xl font-medium pb-2.5 leading-tight font-semibold border-b-4 border-red-700 border-dashed">
-            Tentang Kami
-          </p>
+          <p className='text-xl xl:text-4xl font-medium pb-2.5 leading-tight font-semibold border-b-4 border-red-700 border-dashed'>Tentang Kami</p>
         </div>
         {/* <!--Card--> */}
-        <div id="section2" className=" p-8 mt-6 lg:mt-0 rounded shadow bg-none">
+        <div
+          id="section2"
+          className=" p-8 mt-6 lg:mt-0 rounded shadow bg-none"
+        >
           <h2 className="font-sans font-bold break-normal text-gray-900 py-1 text-2xl">
             Data Korban
           </h2>
-          <hr className="bg-red-700 py-[1px] mb-5" />
+          <hr className='bg-red-700 py-[1px] mb-5' />
           <form onSubmit={handleSubmit}>
             {/* sample gunakan div */}
             {/* Judul Laporan */}
@@ -302,16 +303,16 @@ const ReportForm = () => {
           </div> */}
 
             {/* Judul Laporan */}
-            <div className="flex mb-6">
-              <span className="md:w-1/3">
+            <div className="flex mb-6 items-center">
+              <span className="w-1/4 ">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Judul Laporan
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4">
                 <input
                   type="text"
                   value={dataLaporan.judulLaporan}
@@ -323,22 +324,22 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500  w-full p-2 "
                   placeholder="Judul Laporan"
-                  // required
+                // required
                 />
               </span>
             </div>
 
             {/* Nama Korban */}
-            <div className="flex mb-6">
-              <span className="md:w-1/3">
+            <div className="flex mb-6 items-center">
+              <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Nama Korban
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4">
                 <input
                   type="text"
                   value={dataLaporan.korban}
@@ -347,22 +348,22 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nama Korban"
-                  // required
+                // required
                 />
               </span>
             </div>
 
             {/* Jenis Kelamin */}
-            <div className="flex mb-6">
-              <span className="md:w-1/3">
+            <div className="flex mb-6 items-center">
+              <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Jenis Kelamin
                 </label>
               </span>
-              <span className=" flex md:w-2/3">
+              <span className=" flex w-3/4">
                 {/* <div class="flex"> */}
                 <div class="flex items-center mr-4">
                   <input
@@ -406,15 +407,15 @@ const ReportForm = () => {
 
             {/* Tipe Identitas */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Tipe Identitas
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="tipe"
                   // value={dataLaporan.tipeIdentitasKorban}
@@ -443,15 +444,15 @@ const ReportForm = () => {
 
             {/* Nomer Identitas */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Nomer Identitas
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <input
                   type="number"
                   value={dataLaporan.nomerIdentitasKorban}
@@ -463,14 +464,14 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nomer Identitas"
-                  // required
+                // required
                 />
               </span>
             </div>
 
             {/* Unggah identitas korban */}
             <div className="md:flex mb-6">
-              <div className="md:w-1/3">
+              <div className="md:w-1/4 lg:w-1/4">
                 <label
                   className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-file"
@@ -478,7 +479,7 @@ const ReportForm = () => {
                   Unggah identitas korban
                 </label>
               </div>
-              <div className="md:w-2/3">
+              <div className="md:w-3/4 lg:w-3/4">
                 <input
                   type="file"
                   multiple
@@ -493,7 +494,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept="image/*"
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -507,16 +508,16 @@ const ReportForm = () => {
 
             {/* dddKorban */}
             {/* Provinsi */}
-            <div className="flex mb-6">
-              <span className="md:w-1/3">
+            <div className="flex mb-6 ">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Provinsi
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4">
                 <select
                   id="provinsiKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -545,15 +546,15 @@ const ReportForm = () => {
 
             {/* Kota/Kab */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
-                  Kota/Kabupaten
+                  Kota/ Kabupaten
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="kabupatenKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -588,15 +589,15 @@ const ReportForm = () => {
 
             {/* Kecamatan */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kecamatan
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="kecamatanKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -631,15 +632,15 @@ const ReportForm = () => {
 
             {/* Kelurahan */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kelurahan
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="kelurahanKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -674,15 +675,15 @@ const ReportForm = () => {
 
             {/* RT/RW */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   RT/RW
                 </label>
               </span>
-              <span className="md:w-2/3 flex space-x-10">
+              <span className="w-3/4 flex items-center space-x-10">
                 <input
                   type="number"
                   value={dataLaporan.rtKorban}
@@ -691,7 +692,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                  // required
+                // required
                 />
                 <input
                   type="number"
@@ -701,22 +702,22 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                  // required
+                // required
                 />
               </span>
             </div>
 
             {/* No. HP */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   No. HP
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <input
                   type="number"
                   value={dataLaporan.nomerKorban}
@@ -728,7 +729,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="No. HP"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -737,10 +738,10 @@ const ReportForm = () => {
             <h2 className="font-sans font-bold break-normal text-gray-900  py-1 text-2xl">
               Deskripsi Kejadian
             </h2>
-            <hr className="bg-red-700 py-[1px] mb-5" />
+            <hr className='bg-red-700 py-[1px] mb-5' />
             {/* Kronologi */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4">
                 <label
                   className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-textfield"
@@ -748,9 +749,9 @@ const ReportForm = () => {
                   Kronologi
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4">
                 <textarea
-                  className="form-textarea block w-full  focus:bg-white rounded-lg"
+                  className="form-textarea block w-full p-2 focus:bg-white rounded-lg"
                   id="my-textarea"
                   value={dataLaporan.kronologi}
                   onChange={(e) =>
@@ -761,7 +762,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder="Uraikan secara rinci kejadian yang dialami korban (ciri-ciri pelaku, waktu kejadian, lokasi kejadian)"
-
+                // required
                 ></textarea>
               </span>
             </div>
@@ -769,15 +770,15 @@ const ReportForm = () => {
             {/* dddKejadian */}
             {/* Provinsi */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Provinsi
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="provinsiKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -806,15 +807,15 @@ const ReportForm = () => {
 
             {/* Kota/Kab */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
-                  Kota/Kabupaten
+                  Kota/ Kabupaten
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="kabupatenKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -849,15 +850,15 @@ const ReportForm = () => {
 
             {/* Kecamatan */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kecamatan
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="kecamatanKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -892,15 +893,15 @@ const ReportForm = () => {
 
             {/* Kelurahan */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kelurahan
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <select
                   id="kelurahanKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
@@ -935,15 +936,15 @@ const ReportForm = () => {
 
             {/* RT/RW */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   RT/RW
                 </label>
               </span>
-              <span className="md:w-2/3 flex space-x-10">
+              <span className="w-3/4 items-center flex space-x-10">
                 <input
                   type="number"
                   value={dataLaporan.rtKejadian}
@@ -955,7 +956,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                  // required
+                // required
                 />
                 <input
                   type="number"
@@ -968,13 +969,13 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                  // required
+                // required
                 />
               </span>
             </div>
             {/* Dokumen Pendukung */}
             <div className="md:flex mb-6">
-              <div className="md:w-1/3">
+              <div className="md:w-1/4 lg:w-1/4">
                 <label
                   className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-file"
@@ -982,7 +983,7 @@ const ReportForm = () => {
                   Dokumen Pendukung
                 </label>
               </div>
-              <div className="md:w-2/3">
+              <div className="md:w-3/4 lg:w-3/4">
                 <input
                   type="file"
                   multiple
@@ -997,7 +998,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept=""
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -1014,15 +1015,15 @@ const ReportForm = () => {
 
             {/* Harapan Pengadu */}
             <div className="flex mb-6">
-              <span className="md:w-1/3">
+              <span className="w-1/4 flex">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Harapan Pengadu
                 </label>
               </span>
-              <span className="md:w-2/3">
+              <span className="w-3/4 flex items-center">
                 <textarea
                   className="form-textarea block w-full focus:bg-white rounded-lg"
                   id="my-textarea"
@@ -1035,7 +1036,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder=" Harapan pengadu"
-                  // required
+                // required
                 ></textarea>
               </span>
             </div>
@@ -1049,7 +1050,7 @@ const ReportForm = () => {
                   name="remember_me"
                   id="remember_me"
                   className="mr-2 focus:ring-0 rounded"
-                  // required
+                // required
                 />
                 <label className="mb-4 text-sm font-medium text-gray-900 ">
                   Saya bertanggung jawab atas pernyataan saya diatas
@@ -1064,12 +1065,12 @@ const ReportForm = () => {
                 <button className="" type="submit">
                   <a
                     href="#_"
-                    className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-gray-800 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
+                    className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-gray-800 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 border border-red-700 bg-gray-50 group"
                   >
-                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-gray-800 group-hover:h-full"></span>
+                    <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-red-700 group-hover:h-full"></span>
                     <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                       <svg
-                        className="w-5 h-5 text-gray-800"
+                        className="w-5 h-5 text-red-700"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -1099,7 +1100,7 @@ const ReportForm = () => {
                         ></path>
                       </svg>
                     </span>
-                    <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                    <span className="relative w-full text-red-700 text-left transition-colors duration-200 ease-in-out group-hover:text-white">
                       Report !
                     </span>
                   </a>
