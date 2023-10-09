@@ -179,7 +179,7 @@ const Pengaduan = () => {
                   </div>
                   <div className="flex w-full flex-col">
                     <p className="mb-2 text-lg">Pelapor</p>
-                    <p className="mb-2 text-sm">{user.username}</p>
+                    <p className="mb-2 text-sm">{user[0].username}</p>
                   </div>
                   <div className="flex w-full flex-col">
                     <p className="mb-2 text-lg">Korban</p>
