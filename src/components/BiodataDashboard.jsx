@@ -108,7 +108,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Email</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <input
                                     disabled
                                     class="peer h-full w-full rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
@@ -131,7 +131,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Nama Lengkap</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <input
                                     disabled
                                     class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border disabled:bg-none "
@@ -153,7 +153,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Kata Sandi</p>
                     <div className="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <input
                                     disabled
                                     className="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
@@ -174,7 +174,7 @@ const BiodataDashboard = () => {
                 <div className='flex w-full items-center '>
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>KTP</p>
                     {
-                        ubahBio == false ? (
+                        ubahBio === false ? (
                             <div className='h-32 w-64 xl:h-52 xl:w-96 border-2 rounded-md border-slate-500 flex justify-center items-center text-slate-400'>
                                 <p className='font-thin text-xs'>no images</p>
                             </div>
@@ -227,7 +227,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>NIK</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <input
                                     disabled
                                     class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border disabled:bg-none "
@@ -249,7 +249,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Jenis Kelamin</p>
 
                     {
-                        ubahBio == false ? (
+                        ubahBio === false ? (
                             <div class="flex gap-10">
                                 <div class="inline-flex items-center">
                                     <label
@@ -388,7 +388,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>No HP</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <input
                                     disabled
                                     class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
@@ -410,7 +410,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Provinsi</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <select disabled onChange={(e) => provinsi(e.target.value)} class="peer h-full w-full rounded-[7px] border border-gray-300 pl-2">
                                     <option value="" selected>Pilih Provinsi</option>
                                     {allProvinsi.map(prov => (
@@ -434,7 +434,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Kota / Kabupaten</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <select disabled onChange={(e) => kota(e.target.value)} class="peer h-full w-full rounded-[7px] border border-gray-300 pl-2 ">
                                     <option value="" selected>Pilih Kota / Kabupaten</option>
                                     {allKota.map(kota => (
@@ -458,7 +458,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Kecamatan</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <select disabled onChange={(e) => kecamatan(e.target.value)} class="peer h-full w-full rounded-[7px] border border-gray-300 pl-2 ">
                                     <option value="" selected>Pilih Kecamatan</option>
                                     {allKecamatan.map(kecamatan => (
@@ -482,7 +482,7 @@ const BiodataDashboard = () => {
                     <p className='w-1/4 md:text-lg text-sm font-normal pr-2'>Kelurahan</p>
                     <div class="relative h-10 w-3/4 min-w-[200px]">
                         {
-                            ubahBio == false ? (
+                            ubahBio === false ? (
                                 <select disabled class="peer h-full w-full rounded-[7px] border border-gray-300 pl-2 ">
                                     <option value="" selected>Pilih Kelurahan</option>
                                     {allKelurahan.map(kelurahan => (
@@ -507,7 +507,7 @@ const BiodataDashboard = () => {
                     <div class="w-3/4 md:text-lg">
                         <div class="relative flex justify-between h-10 w-full">
                             {
-                                ubahBio == false ? (
+                                ubahBio === false ? (
                                     <>
                                         <input
                                             disabled
@@ -548,7 +548,7 @@ const BiodataDashboard = () => {
 
             </div>
 
-            <p onClick={() => setUbahBio(!ubahBio)} className={`w-full mx-auto transition duration-200 ease-in-out text-center py-2 rounded-md hover:cursor-pointer ${ubahBio == false ? "hover:bg-gray-400 bg-gray-300 text-white" : "hover:bg-red-800 bg-red-700 text-white"} md:w-3/4 lg:w-1/2`}>{ubahBio == false ? "Ubah Biodata" : "Simpan Perubahan"}</p>
+            <p onClick={() => setUbahBio(!ubahBio)} className={`w-full mx-auto transition duration-200 ease-in-out text-center py-2 rounded-md hover:cursor-pointer ${ubahBio === false ? "hover:bg-gray-400 bg-gray-300 text-white" : "hover:bg-red-800 bg-red-700 text-white"} md:w-3/4 lg:w-1/2`}>{ubahBio === false ? "Ubah Biodata" : "Simpan Perubahan"}</p>
         </div >
     )
 }

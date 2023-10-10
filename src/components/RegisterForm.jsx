@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const RegisterForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confPassword, setConfPassword] = useState('');
-  const navigate = useNavigate();
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  // const [confPassword, setConfPassword] = useState('');
+  // const navigate = useNavigate();
 
   return (
     // <div className="flex justify-center items-center py-5">
@@ -21,7 +21,7 @@ const RegisterForm = () => {
           </label>
           <input
             type="text"
-            onChange={(e) => setName(e.target.value)}
+            // onChange={(e) => setName(e.target.value)}
             className="bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 w-full p-2 "
             placeholder="Nama"
             required
@@ -33,7 +33,7 @@ const RegisterForm = () => {
           </label>
           <input
             type="text"
-            onChange={(e) => setEmail(e.target.value)}
+            // onChange={(e) => setEmail(e.target.value)}
             className="bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 w-full p-2 "
             placeholder="name@email.com"
             required
@@ -46,7 +46,7 @@ const RegisterForm = () => {
           </label>
           <input
             type="password"
-            onChange={(e) => setPassword(e.target.value)}
+            // onChange={(e) => setPassword(e.target.value)}
             className="bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 w-full p-2 "
             placeholder="********"
             required
@@ -59,7 +59,7 @@ const RegisterForm = () => {
           </label>
           <input
             type="password"
-            onChange={(e) => setConfPassword(e.target.value)}
+            // onChange={(e) => setConfPassword(e.target.value)}
             className=" bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 w-full p-2 "
             placeholder="********"
             required

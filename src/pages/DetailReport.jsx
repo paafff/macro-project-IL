@@ -15,7 +15,7 @@ const DetailReport = () => {
       alert('maaf login dulu yah');
       navigate('/auth');
     }
-  }, [user]);
+  }, [user, navigate]);
 
   return (
     <Layout>

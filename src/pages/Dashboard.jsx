@@ -19,7 +19,7 @@ const Dashboard = () => {
       alert('maaf login dulu yah');
       navigate('/auth');
     }
-  }, [user]);
+  }, [user, navigate]);
   return (
     <Layout>
       <BiodataDashboard />

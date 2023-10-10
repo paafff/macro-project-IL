@@ -23,7 +23,7 @@ const Pengaduan = () => {
       alert('maaf login dulu yah');
       navigate('/auth');
     }
-  }, [user]);
+  }, [user, navigate]);
 
   return (
     <Layout>
