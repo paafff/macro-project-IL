@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="w-36 py-10">
               <Link to="/">
-                <img src={logo} className="py-10" />
+                <img src={logo} className="py-10" alt='beranibicara' />
               </Link>
             </div>
           </div>
