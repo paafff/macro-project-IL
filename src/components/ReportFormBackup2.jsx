@@ -155,12 +155,7 @@ const ReportForm = () => {
   // ]);
 
   useEffect(() => {
-    // getProvinsi();
-    // getKabupaten();
-    // getKecamatan();
-    // getKelurahan();
-    getAlamatKorban();
-    getAlamatKejadian();
+
 
     // console.log(provinsi);
     console.log('Aprov' + provinsiKorbanSelected);
@@ -174,8 +169,7 @@ const ReportForm = () => {
     console.log('Bkel' + kelurahanKejadianSelected);
     // console.log(provinsi);
   }, [
-    getAlamatKorban,
-    getAlamatKejadian,
+
     provinsiKorbanSelected,
     kabupatenKorbanSelected,
     kecamatanKorbanSelected,
