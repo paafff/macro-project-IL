@@ -25,8 +25,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
-        }`}
+      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${
+        shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
+      }`}
     >
       {/* 
      <nav
@@ -178,7 +179,10 @@ const Navbar = () => {
 
               {/* notiffffff */}
               <div class="group inline-block relative">
-                <MdOutlineNotificationsActive style={{ color: "#1a1a1a", }} className="scale-[1.5] cursor-pointer" />
+                <MdOutlineNotificationsActive
+                  style={{ color: '#1a1a1a' }}
+                  className="scale-[1.5] cursor-pointer"
+                />
 
                 <ul class="absolute drop-shadow-lg bg-[#F7F7F7] rounded-lg hidden text-slate-700 w-80 mt-1 pt-2.5 group-hover:block">
                   {/* <div class=" "> */}
@@ -272,7 +276,6 @@ const Navbar = () => {
                 Tentang
               </Link>
 
-
               <Link
                 to={`/auth`}
                 className="
@@ -290,7 +293,6 @@ const Navbar = () => {
               >
                 Masuk
               </Link>
-
             </div>
           )}
         </div>
@@ -299,38 +301,60 @@ const Navbar = () => {
       {/* Menu dropdown untuk perangkat mobile */}
       {menuOpen && (
         <div className="md:hidden">
-          <div className="flex flex-col items-start py-4 shadow-md">
-            <Link
-              to={`/auth`}
-              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
-            >
-              Masuk
-            </Link>
-            <Link
-              to={'/report'}
-              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
-            >
-              Pengaduan
-            </Link>
-            <Link
-              to={`/about`}
-              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
-            >
-              Tentang
-            </Link>
-            <Link
-              to={`/dashboard`}
-              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
-            >
-              Profile
-            </Link>
-            <Link
-              to={`/pengaduan`}
-              className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
-            >
-              Pengaduan
-            </Link>
-          </div>
+          {user[0] ? (
+            <div className="flex flex-col items-start py-4 shadow-md">
+              <Link
+                to={'/report'}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Lapor
+              </Link>
+
+              <Link
+                to={`/pengaduan`}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Pengaduan
+              </Link>
+
+              <Link
+                to={`/about`}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Tentang
+              </Link>
+              <Link
+                to={`/dashboard`}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Profile
+              </Link>
+
+            </div>
+          ) : (
+            <div className="flex flex-col items-start py-4 shadow-md">
+              <Link
+                to={'/report'}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Lapor
+              </Link>
+
+              <Link
+                to={`/auth`}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Masuk
+              </Link>
+
+              <Link
+                to={`/about`}
+                className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
+              >
+                Tentang
+              </Link>
+            </div>
+          )}
         </div>
       )}
     </nav>
