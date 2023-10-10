@@ -43,6 +43,29 @@ const ReportForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  // useEffect(() => {
+
+  //   const getProvinsiKorbanKejadian = async () => {
+  //     try {
+  //       const getProvKorban = await axios.get(
+  //         `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
+  //       );
+
+  //       setProvinsiKorban(getProvKorban.data.value);
+
+  //       const getProvKejadian = await axios.get(
+  //         `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
+  //       );
+
+  //       setProvinsiKejadian(getProvKejadian.data.value);
+  //     } catch (error) {
+  //       console.log(error); // Menampilkan error pada konsol
+  //     }
+  //   };
+
+  //   getProvinsiKorbanKejadian();
+  // }, []);
+
   const getAlamatKorban = useCallback(async () => {
     try {
       const getProvKorban = await axios.get(
@@ -72,6 +95,7 @@ const ReportForm = () => {
       console.log(error); // Menampilkan error pada konsol
     }
   }, [
+    // provinsiKorban,
     provinsiKorbanSelected,
     kabupatenKorbanSelected,
     kecamatanKorbanSelected,
@@ -155,6 +179,9 @@ const ReportForm = () => {
   // ]);
 
   useEffect(() => {
+    getAlamatKejadian();
+    getAlamatKorban();
+
     // console.log(provinsi);
     console.log('Aprov' + provinsiKorbanSelected);
     console.log('Akab' + kabupatenKorbanSelected);
@@ -167,8 +194,8 @@ const ReportForm = () => {
     console.log('Bkel' + kelurahanKejadianSelected);
     // console.log(provinsi);
   }, [
-    getAlamatKejadian,
     getAlamatKorban,
+    getAlamatKejadian,
     provinsiKorbanSelected,
     kabupatenKorbanSelected,
     kecamatanKorbanSelected,
@@ -210,7 +237,7 @@ const ReportForm = () => {
     };
     dispatch(addReport(newReport));
 
-    navigate('/reports');
+    navigate('/pengaduan');
   };
 
   return (
