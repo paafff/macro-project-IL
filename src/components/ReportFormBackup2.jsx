@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { addReport } from './../redux/reportSlice';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const ReportForm = () => {
-  const [judulLaporan, setJudulLaporan] = useState('');
-  const [pelapor, setPelapor] = useState('');
-  const [korban, setKorban] = useState('');
+  // const [judulLaporan, setJudulLaporan] = useState('');
+  // const [pelapor, setPelapor] = useState('');
+  // const [korban, setKorban] = useState('');
 
   // const [nomorHP, setNomorHP] = useState('');
 
@@ -43,7 +43,7 @@ const ReportForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const getAlamatKorban = async () => {
+  const getAlamatKorban = useCallback(async () => {
     try {
       const getProvKorban = await axios.get(
         `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
@@ -71,9 +71,13 @@ const ReportForm = () => {
     } catch (error) {
       console.log(error); // Menampilkan error pada konsol
     }
-  };
+  }, [
+    provinsiKorbanSelected,
+    kabupatenKorbanSelected,
+    kecamatanKorbanSelected,
+  ]);
 
-  const getAlamatKejadian = async () => {
+  const getAlamatKejadian = useCallback(async () => {
     try {
       const getProvKejadian = await axios.get(
         `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
@@ -101,71 +105,11 @@ const ReportForm = () => {
     } catch (error) {
       console.log(error); // Menampilkan error pada konsol
     }
-  };
-
-  // const getProvinsi = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
-  //     );
-
-  //     setProvinsi(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
-
-  // const getKabupaten = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/kabupaten?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9&id_provinsi=${provinsiSelected}`
-  //     );
-
-  //     setKabupaten(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
-
-  // const getKecamatan = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/kecamatan?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9&id_kabupaten=${kabupatenSelected}`
-  //     );
-
-  //     setKecamatan(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
-
-  // const getKelurahan = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/kelurahan?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9&id_kecamatan=${kecamatanSelected}`
-  //     );
-
-  //     setKelurahan(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
+  }, [
+    provinsiKejadianSelected,
+    kabupatenKejadianSelected,
+    kecamatanKejadianSelected,
+  ]);
 
   const [dataLaporan, setDataLaporan] = useState({
     judulLaporan: '',
@@ -194,6 +138,22 @@ const ReportForm = () => {
     harapanPengadu: '',
   });
 
+  // const getAlamatKorban = useCallback(async () => {
+  //   // implementasi fungsi getAlamatKorban
+  // }, [
+  //   provinsiKorbanSelected,
+  //   kabupatenKorbanSelected,
+  //   kecamatanKorbanSelected,
+  // ]);
+
+  // const getAlamatKejadian = useCallback(async () => {
+  //   // implementasi fungsi getAlamatKejadian
+  // }, [
+  //   provinsiKejadianSelected,
+  //   kabupatenKejadianSelected,
+  //   kecamatanKejadianSelected,
+  // ]);
+
   useEffect(() => {
     // getProvinsi();
     // getKabupaten();
@@ -214,6 +174,8 @@ const ReportForm = () => {
     console.log('Bkel' + kelurahanKejadianSelected);
     // console.log(provinsi);
   }, [
+    getAlamatKorban,
+    getAlamatKejadian,
     provinsiKorbanSelected,
     kabupatenKorbanSelected,
     kecamatanKorbanSelected,
@@ -512,11 +474,15 @@ const ReportForm = () => {
                   id="provinsiKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
                   onChange={(e) => {
-                    const selectedProvinsi = provinsiKorban.find((prov) => prov.id === parseInt(e.target.value));
+                    const selectedProvinsi = provinsiKorban.find(
+                      (prov) => prov.id === parseInt(e.target.value)
+                    );
                     setProvinsiKorbanSelected(parseInt(e.target.value));
                     setDataLaporan({
                       ...dataLaporan,
-                      provinsiKorban: selectedProvinsi ? selectedProvinsi.name : '',
+                      provinsiKorban: selectedProvinsi
+                        ? selectedProvinsi.name
+                        : '',
                     });
                   }}
                   // onChange={(e) => {
