@@ -11,8 +11,7 @@ const Section1Home = () => {
                     <p className='text-lg xl:text-2xl font-regular text-gray-800'>Website pengaduan kasus kekerasan seksual adalah platform aman untuk melaporkan insiden-insiden kekerasan seksual dan mencari bantuan serta dukungan yang diperlukan</p>
                 </div>
                 <div className="button lg:pl-20 lg:mt-0">
-                    <Link to="/report" className='px-4 py-2 xl:px-6 xl:py-4 rounded-md mr-3 font-semibold bg-red-700 text-base xl:text-xl text-white hover:bg-red-800 transition duration-200 ease-in-out shadow-md'>Lapor</Link >
-                    {/* <Link className='px-8 py-4 xl:px-12 xl:py-6 rounded-full text-red-800 font-semibold ring-inset ring-4 ring-red-700 hover:ring-red-800 hover:text-gray-900 transition duration-200 ease-in-out shadow-md'>Help</Link> */}
+                    <Link to="/report" className='px-4 py-2 xl:px-6 xl:py-4 rounded-md mr-3 font-semibold bg-red-700 text-base xl:text-xl text-white hover:bg-red-800 transition duration-200 ease-in-out drop-shadow-md'>Lapor</Link >
                 </div>
             </div>
             <div className='xs:hidden md:w-1/2 lg:w-1/2 flex justify-center'>

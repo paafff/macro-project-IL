@@ -15,29 +15,14 @@ const allData = [
         id: 3,
         judul: "Laporan 3",
         status: "Success"
-    },
-    {
-        id: 4,
-        judul: "Laporan 4",
-        status: "Pending"
-    },
-    {
-        id: 5,
-        judul: "Laporan 5",
-        status: "Reject"
-    },
-    {
-        id: 6,
-        judul: "Laporan 6",
-        status: "Success"
-    },
+    }
 ]
 
 const CardPengaduan = () => {
 
     const renderCard = allData.map(data => (
         <div
-            className="md:aspect-[12/16] p-5 h-auto shadow-xl xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
+            className="md:aspect-[12/16] p-5 h-auto drop-shadow-lg xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
 
             <div className="flex flex-col justify-between w-full items-center gap-4">
                 <div className='flex justify-between w-full'>
@@ -87,7 +72,7 @@ const CardPengaduan = () => {
 
             <p className='my-8 text-xl xl:text-4xl inline-block w-fit mx-auto font-medium leading-tight font-semibold border-b-4 pb-2.5 border-red-700 border-dashed'>Pengaduan</p>
 
-            <div className="min-h-screen 2xl:max-w-[60%] xl:max-w-[75%] xl:mx-auto xl:flex xl:flex-wrap grid grid-cols-1 md:grid-cols-3 gap-8 p-2 pt-20 mb-24">
+            <div className="min-h-fit 2xl:max-w-[60%] xl:max-w-[75%] xl:mx-auto xl:flex xl:flex-wrap grid grid-cols-1 md:grid-cols-3 gap-8 p-2 pt-20 mb-24">
 
                 {renderCard}
 

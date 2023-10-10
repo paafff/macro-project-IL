@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         fontInter: ['inter'],
+        fontMontserrat: ['montserrat'],
       },
       colors: {
         customGray: '#F7F7F7',

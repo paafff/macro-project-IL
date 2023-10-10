@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <div className="bg-[#F7F7F7] min-h-screen">
         <Navbar />
-        <div className="">{children}</div>
+        <div className="font-fontMontserrat">{children}</div>
         <Footer />
       </div>
 

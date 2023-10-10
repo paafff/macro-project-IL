@@ -15,7 +15,7 @@ const Authentication = () => {
     <Layout>
       <>
         <div className=" flex justify-center items-center min-h-screen  ">
-          <div className="bg-none place-items-center flex flex-col md:flex-row justify-evenly w-full max-w-6xl p-4 bg-none  rounded-lg  sm:p-6 md:p-8">
+          <div className="bg-none place-items-center flex flex-col md:flex-row justify-evenly w-full max-w-6xl p-4 bg-none  rounded-lg  sm:p-6 md:p-8 pt-20">
             <div className="relative">
               <img
                 className="max-w-md md:max-w-sm md:self-start "

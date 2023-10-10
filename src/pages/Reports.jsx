@@ -15,7 +15,7 @@ const Reports = () => {
     <Layout>
       {/* <div>Reports</div> */}
 
-      <div className="flex flex-col justify-center">
+      <div className="min-h-screen flex flex-col justify-center">
         <div className="h-fit mx-auto max-w-6xl grid grid-cols-2 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {reports.map((report, index) => (
             <div
@@ -42,7 +42,7 @@ const Reports = () => {
 
                     <div className="mt-3 flex items-end justify-between">
                       <p className="text-md font-bold text-slate-700">
-                      {/* {user[0].email} */}
+                        {/* {user[0].email} */}
                       </p>
 
                       {/* <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">

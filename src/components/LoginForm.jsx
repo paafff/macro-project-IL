@@ -15,23 +15,28 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newLogin = {
-      username: '',
-      email: email,
-      password: password,
-    };
+    if (email !== 'pstar7@mail.com' || password !== '12345') {
+      alert('maaf gagal');
+    } else {
+      const newLogin = {
+        username: 'patrickStar',
+        email: email,
+        password: password,
+      };
 
-    dispatch(addLogin(newLogin));
-
-    navigate('/');
+      dispatch(addLogin(newLogin));
+      navigate('/');
+    }
   };
 
   return (
     <>
       <div className="w-80 p-4 bg-none border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 ">
         {/* {message && <p>{message}</p>} */}
-        <h5 className=" text-xl font-medium text-gray-900 text-center ">Masuk</h5>
-        <hr className='py-1'/>
+        <h5 className=" text-xl font-medium text-gray-900 text-center ">
+          Masuk
+        </h5>
+        <hr className="py-1" />
         <form className="space-y-2" onSubmit={handleSubmit}>
           <div>
             <label className=" mb-1 text-sm font-medium text-gray-900 ">
@@ -59,7 +64,7 @@ const LoginForm = () => {
               required
             />
           </div>
-          <hr className='py-1'/>
+          <hr className="py-1" />
 
           <div className="flex  items-center">
             <label className="mb-1 text-sm font-regular text-gray-900 ">
