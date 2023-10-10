@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 // import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 // import { loginUser, reset, getMe } from '../redux/authSlice';
 import { addLogin } from '../redux/loginSlice';
 
@@ -69,10 +69,7 @@ const LoginForm = () => {
           <div className="flex  items-center">
             <label className="mb-1 text-sm font-regular text-gray-900 ">
               Lupa kata sandi?
-              <a
-                href="#"
-                className="text-blue-600 font-regular hover:text-blue-700 hover:underline"
-              >
+              <a className="text-blue-600 font-regular hover:text-blue-700 hover:underline">
                 {' '}
                 klik disini
               </a>

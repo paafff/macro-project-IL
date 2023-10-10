@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../assets/image/terang.png';
 import { useSelector } from 'react-redux';
-import notifDropdown from './notifDropdown';
+// import notifDropdown from './notifDropdown';
 
 import { MdOutlineNotificationsActive, MdOutlineSms } from 'react-icons/md';
 

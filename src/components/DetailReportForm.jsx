@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addReport } from './../redux/reportSlice';
-import { useNavigate, useParams } from 'react-router-dom';
+// import { useDispatch } from 'react-redux';
+// import { addReport } from './../redux/reportSlice';
+import {  useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import axios from 'axios';
+// import axios from 'axios';
 
 const DetailReportForm = () => {
-  const [judulLaporan, setJudulLaporan] = useState('');
-  const [pelapor, setPelapor] = useState('');
-  const [korban, setKorban] = useState('');
+  // const [judulLaporan, setJudulLaporan] = useState('');
+  // const [pelapor, setPelapor] = useState('');
+  // const [korban, setKorban] = useState('');
 
   // const [nomorHP, setNomorHP] = useState('');
 
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // const navigate = useNavigate();
+  // const dispatch = useDispatch();
   const params = useParams();
 
   const index = parseInt(params.index);

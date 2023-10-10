@@ -5,9 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const ReportForm = () => {
-  const [judulLaporan, setJudulLaporan] = useState('');
-  const [pelapor, setPelapor] = useState('');
-  const [korban, setKorban] = useState('');
+  // const [judulLaporan, setJudulLaporan] = useState('');
+  // const [pelapor, setPelapor] = useState('');
+  // const [korban, setKorban] = useState('');
 
   // const [nomorHP, setNomorHP] = useState('');
 

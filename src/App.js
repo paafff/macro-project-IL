@@ -7,8 +7,6 @@ import Dashboard from "./pages/Dashboard";
 import Pengaduan from "./pages/Pengaduan";
 import { Provider } from "react-redux";
 import store from "./redux/store.js";
-import Reports from "./pages/Reports";
-import Coba from "./pages/Coba";
 import DetailReport from "./pages/DetailReport";
 
 function App() {
@@ -23,8 +21,6 @@ function App() {
             <Route path="/report" element={<Report />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/pengaduan" element={<Pengaduan />} />
-            <Route path="/reports" element={<Reports />} />
-            <Route path="/coba" element={<Coba />} />
             <Route path="/report/info/:index" element={<DetailReport />} />
           </Routes>
         </BrowserRouter>

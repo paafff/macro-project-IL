@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import Layout from './Layout';
 
-import CardProfileDashboard from '../components/CardProfileDashboard';
+// import CardProfileDashboard from '../components/CardProfileDashboard';
 import BiodataDashboard from '../components/BiodataDashboard';
-import LaporanDashboard from '../components/LaporanDashboard';
-import Footer from '../components/Footer';
+// import LaporanDashboard from '../components/LaporanDashboard';
+// import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
