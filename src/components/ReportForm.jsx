@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { addReport } from './../redux/reportSlice';
 import { useNavigate } from 'react-router-dom';
@@ -43,7 +43,7 @@ const ReportForm = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const getAlamatKorban = async () => {
+  const getAlamatKorban = useCallback(async () => {
     try {
       const getProvKorban = await axios.get(
         `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
@@ -71,9 +71,13 @@ const ReportForm = () => {
     } catch (error) {
       console.log(error); // Menampilkan error pada konsol
     }
-  };
+  }, [
+    provinsiKorbanSelected,
+    kabupatenKorbanSelected,
+    kecamatanKorbanSelected,
+  ]);
 
-  const getAlamatKejadian = async () => {
+  const getAlamatKejadian = useCallback(async () => {
     try {
       const getProvKejadian = await axios.get(
         `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
@@ -101,71 +105,11 @@ const ReportForm = () => {
     } catch (error) {
       console.log(error); // Menampilkan error pada konsol
     }
-  };
-
-  // const getProvinsi = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/provinsi?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9`
-  //     );
-
-  //     setProvinsi(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
-
-  // const getKabupaten = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/kabupaten?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9&id_provinsi=${provinsiSelected}`
-  //     );
-
-  //     setKabupaten(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
-
-  // const getKecamatan = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/kecamatan?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9&id_kabupaten=${kabupatenSelected}`
-  //     );
-
-  //     setKecamatan(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
-
-  // const getKelurahan = async () => {
-  //   try {
-  //     const response = await axios.get(
-  //       `https://api.binderbyte.com/wilayah/kelurahan?api_key=6b15fe770615b0b20811cf5620b53274926e4ed04f8eea3bab43517e275110e9&id_kecamatan=${kecamatanSelected}`
-  //     );
-
-  //     setKelurahan(response.data.value);
-  //   } catch (error) {
-  //     if (error.response) {
-  //       //   alert(error.response.data.msg); // Menampilkan pesan error sebagai popup
-  //       // } else {
-  //       console.log(error); // Menampilkan error pada konsol
-  //     }
-  //   }
-  // };
+  }, [
+    provinsiKejadianSelected,
+    kabupatenKejadianSelected,
+    kecamatanKejadianSelected,
+  ]);
 
   const [dataLaporan, setDataLaporan] = useState({
     judulLaporan: '',
@@ -194,14 +138,23 @@ const ReportForm = () => {
     harapanPengadu: '',
   });
 
-  useEffect(() => {
-    // getProvinsi();
-    // getKabupaten();
-    // getKecamatan();
-    // getKelurahan();
-    getAlamatKorban();
-    getAlamatKejadian();
+  // const getAlamatKorban = useCallback(async () => {
+  //   // implementasi fungsi getAlamatKorban
+  // }, [
+  //   provinsiKorbanSelected,
+  //   kabupatenKorbanSelected,
+  //   kecamatanKorbanSelected,
+  // ]);
 
+  // const getAlamatKejadian = useCallback(async () => {
+  //   // implementasi fungsi getAlamatKejadian
+  // }, [
+  //   provinsiKejadianSelected,
+  //   kabupatenKejadianSelected,
+  //   kecamatanKejadianSelected,
+  // ]);
+
+  useEffect(() => {
     // console.log(provinsi);
     console.log('Aprov' + provinsiKorbanSelected);
     console.log('Akab' + kabupatenKorbanSelected);
@@ -214,6 +167,8 @@ const ReportForm = () => {
     console.log('Bkel' + kelurahanKejadianSelected);
     // console.log(provinsi);
   }, [
+    getAlamatKejadian,
+    getAlamatKorban,
     provinsiKorbanSelected,
     kabupatenKorbanSelected,
     kecamatanKorbanSelected,
@@ -255,7 +210,7 @@ const ReportForm = () => {
     };
     dispatch(addReport(newReport));
 
-    navigate('/pengaduan');
+    navigate('/reports');
   };
 
   return (
@@ -266,17 +221,16 @@ const ReportForm = () => {
             Form Pengaduan
           </h2> */}
         <div className="first-text mb-4 flex justify-center items-center">
-          <p className='text-xl xl:text-4xl font-medium pb-2.5 leading-tight font-semibold border-b-4 border-red-700 border-dashed'>Tentang Kami</p>
+          <p className="text-xl xl:text-4xl font-medium pb-2.5 leading-tight font-semibold border-b-4 border-red-700 border-dashed">
+            Tentang Kami
+          </p>
         </div>
         {/* <!--Card--> */}
-        <div
-          id="section2"
-          className=" p-8 mt-6 lg:mt-0 rounded shadow bg-none"
-        >
+        <div id="section2" className=" p-8 mt-6 lg:mt-0 rounded shadow bg-none">
           <h2 className="font-sans font-bold break-normal text-gray-900 py-1 text-2xl">
             Data Korban
           </h2>
-          <hr className='bg-red-700 py-[1px] mb-5' />
+          <hr className="bg-red-700 py-[1px] mb-5" />
           <form onSubmit={handleSubmit}>
             {/* sample gunakan div */}
             {/* Judul Laporan */}
@@ -324,7 +278,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500  w-full p-2 "
                   placeholder="Judul Laporan"
-                // required
+                  // required
                 />
               </span>
             </div>
@@ -348,7 +302,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nama Korban"
-                // required
+                  // required
                 />
               </span>
             </div>
@@ -464,7 +418,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nomer Identitas"
-                // required
+                  // required
                 />
               </span>
             </div>
@@ -494,7 +448,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept="image/*"
-                // required
+                  // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -692,7 +646,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                // required
+                  // required
                 />
                 <input
                   type="number"
@@ -702,7 +656,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                // required
+                  // required
                 />
               </span>
             </div>
@@ -729,7 +683,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="No. HP"
-                // required
+                  // required
                 />
               </span>
             </div>
@@ -738,7 +692,7 @@ const ReportForm = () => {
             <h2 className="font-sans font-bold break-normal text-gray-900  py-1 text-2xl">
               Deskripsi Kejadian
             </h2>
-            <hr className='bg-red-700 py-[1px] mb-5' />
+            <hr className="bg-red-700 py-[1px] mb-5" />
             {/* Kronologi */}
             <div className="flex mb-6">
               <span className="w-1/4">
@@ -762,7 +716,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder="Uraikan secara rinci kejadian yang dialami korban (ciri-ciri pelaku, waktu kejadian, lokasi kejadian)"
-                // required
+                  // required
                 ></textarea>
               </span>
             </div>
@@ -956,7 +910,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                // required
+                  // required
                 />
                 <input
                   type="number"
@@ -969,7 +923,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                // required
+                  // required
                 />
               </span>
             </div>
@@ -998,7 +952,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept=""
-                // required
+                  // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -1036,7 +990,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder=" Harapan pengadu"
-                // required
+                  // required
                 ></textarea>
               </span>
             </div>
@@ -1050,7 +1004,7 @@ const ReportForm = () => {
                   name="remember_me"
                   id="remember_me"
                   className="mr-2 focus:ring-0 rounded"
-                // required
+                  // required
                 />
                 <label className="mb-4 text-sm font-medium text-gray-900 ">
                   Saya bertanggung jawab atas pernyataan saya diatas
