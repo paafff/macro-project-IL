@@ -111,14 +111,14 @@ const BiodataDashboard = () => {
                             ubahBio === false ? (
                                 <input
                                     disabled
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder="" value="my.second.email@gmail.com"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=""
                                 />
                             ) : (
                                 <input
 
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder="" value="my.second.email@gmail.com"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=""
                                 />
                             )
                         }
@@ -134,14 +134,14 @@ const BiodataDashboard = () => {
                             ubahBio === false ? (
                                 <input
                                     disabled
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="Dr. Radjiman Widjodiningrat"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500  focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             ) : (
                                 <input
 
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="Dr. Radjiman Widjodiningrat"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500  focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             )
                         }
@@ -156,14 +156,14 @@ const BiodataDashboard = () => {
                             ubahBio === false ? (
                                 <input
                                     disabled
-                                    className="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="*********"
+                                    className="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             ) : (
                                 <input
 
-                                    className="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="*********"
+                                    className="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             )
                         }
@@ -230,14 +230,14 @@ const BiodataDashboard = () => {
                             ubahBio === false ? (
                                 <input
                                     disabled
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="121232343455657"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500  focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             ) : (
                                 <input
 
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="121232343455657"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500  focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             )
                         }
@@ -258,14 +258,14 @@ const BiodataDashboard = () => {
                                         data-ripple-dark="true"
                                     >
                                         <input
-                                            checked
+
                                             disabled
                                             id="html"
                                             name="type"
                                             type="radio"
-                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-red-700 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-red-500 checked:before:bg-red-500 hover:before:opacity-10"
                                         />
-                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-red-500 opacity-0 transition-opacity peer-checked:opacity-100">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 class="h-3.5 w-3.5"
@@ -294,9 +294,9 @@ const BiodataDashboard = () => {
                                             id="react"
                                             name="type"
                                             type="radio"
-                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-red-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-red-500 checked:before:bg-red-500 hover:before:opacity-10"
                                         />
-                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-red-500 opacity-0 transition-opacity peer-checked:opacity-100">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 class="h-3.5 w-3.5"
@@ -327,9 +327,9 @@ const BiodataDashboard = () => {
                                             id="html"
                                             name="type"
                                             type="radio"
-                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-red-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-red-500 checked:before:bg-red-500 hover:before:opacity-10"
                                         />
-                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-red-500 opacity-0 transition-opacity peer-checked:opacity-100">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 class="h-3.5 w-3.5"
@@ -358,9 +358,9 @@ const BiodataDashboard = () => {
                                             id="react"
                                             name="type"
                                             type="radio"
-                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-red-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-red-500 checked:before:bg-red-500 hover:before:opacity-10"
                                         />
-                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-red-500 opacity-0 transition-opacity peer-checked:opacity-100">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 class="h-3.5 w-3.5"
@@ -391,14 +391,14 @@ const BiodataDashboard = () => {
                             ubahBio === false ? (
                                 <input
                                     disabled
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="034171730328"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             ) : (
                                 <input
 
-                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                    placeholder=" " value="034171730328"
+                                    class="peer h-full w-full rounded-[7px] border border-gray-300  bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                    placeholder=" "
                                 />
                             )
                         }
@@ -512,14 +512,14 @@ const BiodataDashboard = () => {
                                         <input
                                             disabled
                                             type='number'
-                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                            placeholder=" " value="09"
+                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                            placeholder=" "
                                         />
                                         <input
                                             disabled
                                             type='number'
-                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                            placeholder=" " value="01"
+                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                            placeholder=" "
                                         />
                                     </>
                                 ) : (
@@ -527,14 +527,14 @@ const BiodataDashboard = () => {
                                         <input
 
                                             type='number'
-                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                            placeholder=" " value="09"
+                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                            placeholder=" "
                                         />
                                         <input
 
                                             type='number'
-                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border disabled:bg-none "
-                                            placeholder=" " value="01"
+                                            class="peer h-full w-[45%] rounded-[7px] border border-gray-300 bg-none px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-300 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-red-500 focus:outline-0 disabled:border disabled:bg-none "
+                                            placeholder=" "
                                         />
                                     </>
                                 )
@@ -548,7 +548,7 @@ const BiodataDashboard = () => {
 
             </div>
 
-            <p onClick={() => setUbahBio(!ubahBio)} className={`w-full mx-auto transition duration-200 ease-in-out text-center py-2 rounded-md hover:cursor-pointer ${ubahBio === false ? "hover:bg-gray-400 bg-gray-300 text-white" : "hover:bg-red-800 bg-red-700 text-white"} md:w-3/4 lg:w-1/2`}>{ubahBio === false ? "Ubah Biodata" : "Simpan Perubahan"}</p>
+            <p onClick={() => setUbahBio(!ubahBio)} className={`w-full mx-auto transition duration-200 ease-in-out text-center py-2 rounded-md hover:cursor-pointer ${ubahBio === false ? "hover:bg-gray-500 bg-gray-400 text-white" : "hover:bg-red-800 bg-red-700 text-white"} md:w-3/4 lg:w-1/2`}>{ubahBio === false ? "Ubah Biodata" : "Simpan Perubahan"}</p>
         </div >
     )
 }

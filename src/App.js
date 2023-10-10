@@ -8,6 +8,7 @@ import Pengaduan from "./pages/Pengaduan";
 import { Provider } from "react-redux";
 import store from "./redux/store.js";
 import DetailReport from "./pages/DetailReport";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/pengaduan" element={<Pengaduan />} />
             <Route path="/report/info/:index" element={<DetailReport />} />
+            <Route path="/404" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
       </div>

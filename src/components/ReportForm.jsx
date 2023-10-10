@@ -287,7 +287,7 @@ const ReportForm = () => {
             <div className="flex mb-6 items-center">
               <span className="w-1/4 ">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Judul Laporan
@@ -305,7 +305,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-red-500  w-full p-2 "
                   placeholder="Judul Laporan"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -314,7 +314,7 @@ const ReportForm = () => {
             <div className="flex mb-6 items-center">
               <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Nama Korban
@@ -329,13 +329,13 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nama Korban"
-                  // required
+                // required
                 />
               </span>
             </div>
 
-            {/* Jenis Kelamin */}
-            <div className="flex mb-6 items-center">
+            {/* Jenis Kelamin Danang*/}
+            {/* <div className="flex mb-6 items-center">
               <span className="w-1/4">
                 <label
                   className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
@@ -345,7 +345,7 @@ const ReportForm = () => {
                 </label>
               </span>
               <span className=" flex w-3/4">
-                {/* <div class="flex"> */}
+                
                 <div class="flex items-center mr-4">
                   <input
                     id="inline-radio"
@@ -359,6 +359,7 @@ const ReportForm = () => {
                       })
                     }
                     name="inline-radio-group"
+
                     class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 "
                   />
                   <label for="inline-radio" class="ml-2 text-sm font-medium">
@@ -384,13 +385,102 @@ const ReportForm = () => {
                   </label>
                 </div>
               </span>
+            </div> */}
+
+            {/* Jenis Kelamin Ilham */}
+
+            <div className='flex mb-6 items-center'>
+              <label
+                className="w-1/4 block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
+                htmlFor="my-textfield"
+              >
+                Jenis Kelamin
+              </label>
+
+              <div class="flex gap-10">
+                <div class="inline-flex items-center">
+                  <label
+                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                    for="html"
+                    data-ripple-dark="true"
+                  >
+                    <input
+
+                      id="html"
+                      name="type"
+                      type="radio"
+                      onChange={(e) =>
+                        setDataLaporan({
+                          ...dataLaporan,
+                          jenisKelamin: e.target.value,
+                        })
+                      }
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-red-700 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-red-500 checked:before:bg-red-500 hover:before:opacity-10"
+                    />
+                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-red-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-3.5 w-3.5"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                      >
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </div>
+                  </label>
+                  <label
+                    class="mt-px cursor-pointer select-none font-light text-gray-700"
+                    for="html"
+                  >
+                    Pria
+                  </label>
+                </div>
+                <div class="inline-flex items-center">
+                  <label
+                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                    for="react"
+                    data-ripple-dark="true"
+                  >
+                    <input
+
+                      id="react"
+                      name="type"
+                      type="radio"
+                      onChange={(e) =>
+                        setDataLaporan({
+                          ...dataLaporan,
+                          jenisKelamin: e.target.value,
+                        })
+                      }
+                      class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-gray-300 text-red-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-red-500 checked:before:bg-red-500 hover:before:opacity-10"
+                    />
+                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-red-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-3.5 w-3.5"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                      >
+                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                      </svg>
+                    </div>
+                  </label>
+                  <label
+                    class="mt-px cursor-pointer select-none font-light text-gray-700"
+                    for="react"
+                  >
+                    Wanita
+                  </label>
+                </div>
+              </div>
+
             </div>
 
             {/* Tipe Identitas */}
             <div className="flex mb-6">
               <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Tipe Identitas
@@ -427,7 +517,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Nomer Identitas
@@ -445,7 +535,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="Nomer Identitas"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -454,7 +544,7 @@ const ReportForm = () => {
             <div className="md:flex mb-6">
               <div className="md:w-1/4 lg:w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-file"
                 >
                   Unggah identitas korban
@@ -475,7 +565,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept="image/*"
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -492,7 +582,7 @@ const ReportForm = () => {
             <div className="flex mb-6 ">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Provinsi
@@ -529,7 +619,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kota/ Kabupaten
@@ -572,7 +662,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kecamatan
@@ -615,7 +705,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kelurahan
@@ -658,7 +748,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   RT/RW
@@ -673,7 +763,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                  // required
+                // required
                 />
                 <input
                   type="number"
@@ -683,7 +773,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -692,7 +782,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   No. HP
@@ -710,7 +800,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="No. HP"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -724,7 +814,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kronologi
@@ -743,7 +833,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder="Uraikan secara rinci kejadian yang dialami korban (ciri-ciri pelaku, waktu kejadian, lokasi kejadian)"
-                  // required
+                // required
                 ></textarea>
               </span>
             </div>
@@ -753,7 +843,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Provinsi
@@ -790,7 +880,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kota/ Kabupaten
@@ -833,7 +923,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kecamatan
@@ -876,7 +966,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Kelurahan
@@ -919,7 +1009,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex items-center">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   RT/RW
@@ -937,7 +1027,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RT"
-                  // required
+                // required
                 />
                 <input
                   type="number"
@@ -950,7 +1040,7 @@ const ReportForm = () => {
                   }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder="RW"
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -958,7 +1048,7 @@ const ReportForm = () => {
             <div className="md:flex mb-6">
               <div className="md:w-1/4 lg:w-1/4">
                 <label
-                  className="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left mb-3 md:mb-0 pr-4"
                   htmlFor="my-file"
                 >
                   Dokumen Pendukung
@@ -979,7 +1069,7 @@ const ReportForm = () => {
                   id="my-file"
                   name="file"
                   accept=""
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -998,7 +1088,7 @@ const ReportForm = () => {
             <div className="flex mb-6">
               <span className="w-1/4 flex">
                 <label
-                  className="block text-gray-600 font-bold md:text-left md:mb-0 pr-4"
+                  className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
                   htmlFor="my-textfield"
                 >
                   Harapan Pengadu
@@ -1017,7 +1107,7 @@ const ReportForm = () => {
                   }
                   rows="5"
                   placeholder=" Harapan pengadu"
-                  // required
+                // required
                 ></textarea>
               </span>
             </div>
@@ -1031,7 +1121,7 @@ const ReportForm = () => {
                   name="remember_me"
                   id="remember_me"
                   className="mr-2 focus:ring-0 rounded"
-                  // required
+                // required
                 />
                 <label className="mb-4 text-sm font-medium text-gray-900 ">
                   Saya bertanggung jawab atas pernyataan saya diatas

@@ -4,7 +4,7 @@ import ImageHero from '../assets/image/hero-section1-homepage.jpg'
 
 const Section1Home = () => {
     return (
-        <div className='min-h-screen md:min-h-[600px] lg:min-h-screen flex flex-col md:flex-row justify-around items-center p-5 xl:p-32'>
+        <div className='min-h-screen md:min-h-[600px] lg:min-h-screen pt-20 md:pt-0 lg:pt-0 xl:pt-0 flex flex-col md:flex-row justify-around items-center p-5 xl:p-32'>
             <div className='md:w-1/2 lg:w-1/2 md:p-5 lg:p-0 flex flex-col justify-center'>
                 <div className="text lg:pl-20 lg:pb-10 mb-8">
                     <p className='text-3xl xl:text-[64px] leading-tight font-medium mb-4 xl:mb-8 text-gray-800'>Laporkan Kekerasan Seksual!</p>
