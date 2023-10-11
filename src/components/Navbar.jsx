@@ -173,7 +173,7 @@ const Navbar = () => {
                 hover:before:w-full
                 hover:before:opacity-100"
               >
-                Profile
+                Profil
               </Link>
 
               {/* notiffffff */}
@@ -326,7 +326,7 @@ const Navbar = () => {
                 to={`/dashboard`}
                 className="text-lg text-gray-800 hover:bg-red-700 hover:text-white px-4 py-2 rounded-md font-medium transition duration-200 ease-in-out"
               >
-                Profile
+                Profil
               </Link>
 
             </div>

@@ -38,7 +38,7 @@ function CardAbout() {
             <div>
               <div className="text-center px-2">
                 <p className="font-semibold text-base text-blue-950 tracking-wide">
-                  Rafael Hotasiho Imanuel Napitupulu
+                  Rafael H.I.N
                 </p>
               </div>
               <div className="my-2">
@@ -132,7 +132,7 @@ function CardAbout() {
               </div>
               <div className="my-2">
                 <p className="text-sm text-center font-regular text-slate-700">
-                  Hacker / Coder
+                  Coder
                 </p>
               </div>
               <div className="my-4 flex justify-center gap-4 pb-4">

@@ -97,7 +97,7 @@ const BiodataDashboard = () => {
 
             <div className='flex items-center gap-8 mx-auto'>
                 <div className='h-32 w-32 xl:h-52 xl:w-52 border-2 border-dashed border-slate-500 flex justify-center items-center text-slate-400'>
-                    <p className='font-thin text-xs'>no images</p>
+                    <p className='font-thin text-xs'>foto</p>
                 </div>
                 <p className='px-8 py-2 rounded-md text-sm text-red-700 border border-red-700 font-medium hover:text-[#f7f7f7] hover:bg-red-700 hover:cursor-pointer'>Unggah Foto</p>
             </div>
@@ -548,7 +548,7 @@ const BiodataDashboard = () => {
 
             </div>
 
-            <p onClick={() => setUbahBio(!ubahBio)} className={`w-full mx-auto transition duration-200 ease-in-out text-center py-2 rounded-md hover:cursor-pointer ${ubahBio === false ? "hover:bg-gray-500 bg-gray-400 text-white" : "hover:bg-red-800 bg-red-700 text-white"} md:w-3/4 lg:w-1/2`}>{ubahBio === false ? "Ubah Biodata" : "Simpan Perubahan"}</p>
+            <p onClick={() => setUbahBio(!ubahBio)} className={`w-full mx-auto transition duration-200 ease-in-out text-center py-2 rounded-md hover:cursor-pointer ${ubahBio === false ? "hover:bg-gray-500 bg-none border border-gray-500 text-black hover:text-white" : "hover:bg-red-800 bg-red-700 text-white"} md:w-3/4 lg:w-1/2`}>{ubahBio === false ? "Ubah Biodata" : "Simpan Perubahan"}</p>
         </div >
     )
 }

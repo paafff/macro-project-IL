@@ -249,12 +249,12 @@ const ReportForm = () => {
           </h2> */}
         <div className="first-text mb-4 flex justify-center items-center">
           <p className="text-xl xl:text-4xl font-medium pb-2.5 leading-tight font-semibold border-b-4 border-red-700 border-dashed">
-            Tentang Kami
+            Form Pengaduan
           </p>
         </div>
         {/* <!--Card--> */}
         <div id="section2" className=" p-8 mt-6 lg:mt-0 rounded shadow bg-none">
-          <h2 className="font-sans font-bold break-normal text-gray-900 py-1 text-2xl">
+          <h2 className="font-sans font-medium break-normal text-gray-900 py-1 text-2xl">
             Data Korban
           </h2>
           <hr className="bg-red-700 py-[1px] mb-5" />
@@ -405,7 +405,7 @@ const ReportForm = () => {
                     data-ripple-dark="true"
                   >
                     <input
-
+                      value="Pria"
                       id="html"
                       name="type"
                       type="radio"
@@ -442,7 +442,7 @@ const ReportForm = () => {
                     data-ripple-dark="true"
                   >
                     <input
-
+                      value="Wanita"
                       id="react"
                       name="type"
                       type="radio"
@@ -779,7 +779,7 @@ const ReportForm = () => {
             </div>
 
             {/* No. HP */}
-            <div className="flex mb-6">
+            <div className="flex mb-6 pb-4">
               <span className="w-1/4 flex items-center">
                 <label
                   className="block text-gray-600 text-sm md:text-base font-bold md:text-left md:mb-0 pr-4"
@@ -805,8 +805,8 @@ const ReportForm = () => {
               </span>
             </div>
 
-            <hr className="my-6 border-t border-gray-300" />
-            <h2 className="font-sans font-bold break-normal text-gray-900  py-1 text-2xl">
+            {/* <hr className="my-6 border-t border-gray-300" /> */}
+            <h2 className="font-sans font-medium break-normal text-gray-900  py-1 text-2xl">
               Deskripsi Kejadian
             </h2>
             <hr className="bg-red-700 py-[1px] mb-5" />
@@ -1114,15 +1114,16 @@ const ReportForm = () => {
 
             {/* checkbox */}
             <div className="flex mb-6">
-              <span className="md:w-1/3"></span>
-              <span className="md:w-2/3">
+              <span className="md:w-1/4"></span>
+              <span className="md:w-3/4">
                 <input
                   type="checkbox"
                   name="remember_me"
                   id="remember_me"
-                  className="mr-2 focus:ring-0 rounded"
+                  className="mr-2 rounded checked:bg-red-700"
                 // required
                 />
+
                 <label className="mb-4 text-sm font-medium text-gray-900 ">
                   Saya bertanggung jawab atas pernyataan saya diatas
                 </label>
@@ -1172,7 +1173,7 @@ const ReportForm = () => {
                       </svg>
                     </span>
                     <span className="relative w-full text-red-700 text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-                      Report !
+                      Lapor !
                     </span>
                   </a>
                 </button>

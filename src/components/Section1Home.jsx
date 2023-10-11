@@ -8,10 +8,10 @@ const Section1Home = () => {
             <div className='md:w-1/2 lg:w-1/2 md:p-5 lg:p-0 flex flex-col justify-center'>
                 <div className="text lg:pl-20 lg:pb-10 mb-8">
                     <p className='text-3xl xl:text-[64px] leading-tight font-medium mb-4 xl:mb-8 text-gray-800'>Laporkan Kekerasan Seksual!</p>
-                    <p className='text-lg xl:text-2xl font-regular text-gray-800'>Website pengaduan kasus kekerasan seksual adalah platform aman untuk melaporkan insiden-insiden kekerasan seksual dan mencari bantuan serta dukungan yang diperlukan</p>
+                    <p className='text-lg xl:text-2xl font-regular text-gray-800'>Sebuah website yang berkerja sama dengan instansi pemerintah dalam soal pengaduan pelecehan seksual yang dilengkapi dengan fitur unggah bukti dan rincian kejadian.</p>
                 </div>
                 <div className="button lg:pl-20 lg:mt-0">
-                    <Link to="/report" className='px-4 py-2 xl:px-6 xl:py-4 rounded-md mr-3 font-semibold bg-red-700 text-base xl:text-xl text-white hover:bg-red-800 transition duration-200 ease-in-out drop-shadow-md'>Lapor</Link >
+                    <Link to="/report" className='px-8 py-2 xl:px-6 xl:py-4 rounded-md mr-3 font-semibold bg-red-700 text-base xl:text-xl text-white hover:bg-red-800 transition duration-200 ease-in-out drop-shadow-md'>Lapor !</Link >
                 </div>
             </div>
             <div className='xs:hidden md:w-1/2 lg:w-1/2 flex justify-center'>

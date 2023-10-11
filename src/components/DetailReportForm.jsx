@@ -43,13 +43,18 @@ const DetailReportForm = () => {
 
   return (
     <>
-      <div className="mx-auto w-2/4 py-20">
+      <div className="mx-auto w-2/4 py-32">
         {/* <!--Title--> */}
-        <h2 className="font-sans font-bold break-normal text-gray-900  py-4 text-2xl text-center">
+        {/* <h2 className="font-sans font-semibold break-normal text-gray-900  py-4 text-2xl text-center">
           Detail Pengaduan
-        </h2>
+        </h2> */}
+        <div className="first-text mb-4 flex justify-center items-center">
+          <p className="text-xl xl:text-4xl font-medium pb-2.5 leading-tight font-semibold border-b-4 border-red-700 border-dashed">
+            Detail Pengaduan
+          </p>
+        </div>
         {/* <!--Card--> */}
-        <div id="section2" className="p-8 mt-6 lg:mt-0 rounded  bg-none">
+        <div id="section2" className="p-8 mt-6 lg:mt-0 rounded  bg-none shadow-md">
           <h2 className="font-sans font-bold break-normal text-gray-900 py-1 text-2xl">
             Data Korban
           </h2>
@@ -101,7 +106,7 @@ const DetailReportForm = () => {
                   // }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
                   placeholder={dataReport.judulLaporan}
-                  // required
+                // required
                 />
               </span>
             </div>
@@ -125,8 +130,8 @@ const DetailReportForm = () => {
                   //   setDataLaporan({ ...dataLaporan, korban: e.target.value })
                   // }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="Nama Korban"
-                  // required
+                // placeholder="Nama Korban"
+                // required
                 />
               </span>
             </div>
@@ -150,8 +155,8 @@ const DetailReportForm = () => {
                   //   setDataLaporan({ ...dataLaporan, korban: e.target.value })
                   // }
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="Nama Korban"
-                  // required
+                // placeholder="Nama Korban"
+                // required
                 />
               </span>
             </div>
@@ -170,7 +175,7 @@ const DetailReportForm = () => {
                 <select
                   id="tipeIdentitas"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKelurahanKorbanSelected(e.target.value)}
+                // onChange={(e) => setKelurahanKorbanSelected(e.target.value)}
                 >
                   <option value="">{dataReport.tipeIdentitasKorban}</option>
                   {/* {kelurahanKorban.map((kel) => (
@@ -198,8 +203,8 @@ const DetailReportForm = () => {
                   value={dataReport.nomerIdentitasKorban}
                   placeholder={dataReport.nomerIdentitasKorban}
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="Nomer Identitas"
-                  // required
+                // placeholder="Nomer Identitas"
+                // required
                 />
               </span>
             </div>
@@ -225,7 +230,7 @@ const DetailReportForm = () => {
                   id="my-file"
                   name="file"
                   accept="image/*"
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -252,7 +257,7 @@ const DetailReportForm = () => {
                 <select
                   id="kabupatenKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKabupatenKorbanSelected(e.target.value)}
+                // onChange={(e) => setKabupatenKorbanSelected(e.target.value)}
                 >
                   <option value="">{dataReport.provinsiKorban}</option>
                   {/* {kabupatenKorban.map((kab) => (
@@ -278,7 +283,7 @@ const DetailReportForm = () => {
                 <select
                   id="kabupatenKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKabupatenKorbanSelected(e.target.value)}
+                // onChange={(e) => setKabupatenKorbanSelected(e.target.value)}
                 >
                   <option value="">{dataReport.kabupatenKorban}</option>
                   {/* {kabupatenKorban.map((kab) => (
@@ -304,7 +309,7 @@ const DetailReportForm = () => {
                 <select
                   id="kecamatanKorban"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKecamatanKorbanSelected(e.target.value)}
+                // onChange={(e) => setKecamatanKorbanSelected(e.target.value)}
                 >
                   <option value="">{dataReport.kecamatanKorban}</option>
                   {/* {kecamatanKorban.map((kec) => (
@@ -330,7 +335,7 @@ const DetailReportForm = () => {
                 <select
                   id="kelurahanKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKelurahanKorbanSelected(e.target.value)}
+                // onChange={(e) => setKelurahanKorbanSelected(e.target.value)}
                 >
                   <option value="">{dataReport.kelurahanKorban}</option>
                   {/* {kelurahanKorban.map((kel) => (
@@ -358,16 +363,16 @@ const DetailReportForm = () => {
                   value={dataReport.rtKorban}
                   placeholder={dataReport.rtKorban}
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="RT"
-                  // required
+                // placeholder="RT"
+                // required
                 />
                 <input
                   type="number"
                   value={dataReport.rwKorban}
                   placeholder={dataReport.rwKorban}
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="RW"
-                  // required
+                // placeholder="RW"
+                // required
                 />
               </span>
             </div>
@@ -388,8 +393,8 @@ const DetailReportForm = () => {
                   value={dataReport.nomerKorban}
                   placeholder={dataReport.nomerKorban}
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="No. HP"
-                  // required
+                // placeholder="No. HP"
+                // required
                 />
               </span>
             </div>
@@ -418,7 +423,7 @@ const DetailReportForm = () => {
                   placeholder={dataReport.kronologi}
                   // onChange={(e) => setDescription(e.target.value)}
                   rows="5"
-                  // required
+                // required
                 ></textarea>
               </span>
             </div>
@@ -438,7 +443,7 @@ const DetailReportForm = () => {
                 <select
                   id="provinsiKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setProvinsiKejadianSelected(e.target.value)}
+                // onChange={(e) => setProvinsiKejadianSelected(e.target.value)}
                 >
                   <option value="">{dataReport.provinsiKejadian}</option>
                   {/* {provinsiKejadian.map((prov) => (
@@ -464,7 +469,7 @@ const DetailReportForm = () => {
                 <select
                   id="kabupatenKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKabupatenKejadianSelected(e.target.value)}
+                // onChange={(e) => setKabupatenKejadianSelected(e.target.value)}
                 >
                   <option value="">{dataReport.kabupatenKejadian}</option>
                   {/* {kabupatenKejadian.map((kab) => (
@@ -490,7 +495,7 @@ const DetailReportForm = () => {
                 <select
                   id="kecamatanKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKecamatanKejadianSelected(e.target.value)}
+                // onChange={(e) => setKecamatanKejadianSelected(e.target.value)}
                 >
                   <option value="">{dataReport.kecamatanKejadian}</option>
                   {/* {kecamatanKejadian.map((kec) => (
@@ -516,7 +521,7 @@ const DetailReportForm = () => {
                 <select
                   id="kelurahanKejadian"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2"
-                  // onChange={(e) => setKelurahanKejadianSelected(e.target.value)}
+                // onChange={(e) => setKelurahanKejadianSelected(e.target.value)}
                 >
                   <option value="">{dataReport.kelurahanKejadian}</option>
                   {/* {kelurahanKejadian.map((kel) => (
@@ -544,16 +549,16 @@ const DetailReportForm = () => {
                   value={dataReport.rtKejadian}
                   placeholder={dataReport.rtKejadian}
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="RT"
-                  // required
+                // placeholder="RT"
+                // required
                 />
                 <input
                   type="number"
                   value={dataReport.rwKejadian}
                   placeholder={dataReport.rwKejadian}
                   className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full p-2 "
-                  // placeholder="RW"
-                  // required
+                // placeholder="RW"
+                // required
                 />
               </span>
             </div>
@@ -579,7 +584,7 @@ const DetailReportForm = () => {
                   id="my-file"
                   name="file"
                   accept=""
-                  // required
+                // required
                 />
                 <p className="py-2 text-sm text-gray-600">
                   Mendukung file:
@@ -611,8 +616,8 @@ const DetailReportForm = () => {
                   rows="5"
                   value={dataReport.harapanPengadu}
                   placeholder={dataReport.harapanPengadu}
-                  // onChange={(e) => setDescription(e.target.value)}
-                  // required
+                // onChange={(e) => setDescription(e.target.value)}
+                // required
                 ></textarea>
               </span>
             </div>
