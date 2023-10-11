@@ -25,9 +25,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${
-        shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
-      }`}
+      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
+        }`}
     >
       {/* 
      <nav
@@ -50,7 +49,7 @@ const Navbar = () => {
           {/* Tampilan menu untuk perangkat mobile */}
           <div className="md:hidden flex items-center">
             <button
-              className="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md"
+              className="text-gray-800 hover:bg-red-700 hover:text-white px-3 py-2 rounded-md"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <svg
@@ -180,7 +179,7 @@ const Navbar = () => {
               {/* notiffffff */}
               <div class="group inline-block relative">
                 <MdOutlineNotificationsActive
-                  style={{ color: '#1a1a1a' }}
+                  style={{ color: '#1a1a1a', opacity: '.75' }}
                   className="scale-[1.5] cursor-pointer"
                 />
 

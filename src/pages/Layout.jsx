@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
-      <div className="bg-[#F7F7F7] min-h-screen">
+      <div className="bg-[#F7F7F7]">
         <Navbar />
         <div className="font-fontMontserrat">{children}</div>
         <Footer />
