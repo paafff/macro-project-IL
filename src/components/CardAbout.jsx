@@ -28,9 +28,9 @@ function CardAbout() {
         </p>
         <div className="min-h-screen 2xl:max-w-[60%] xl:max-w-[75%] xl:mx-auto xl:flex xl:flex-wrap grid grid-cols-2 md:grid-cols-3 gap-2 p-2 pt-20 mb-24">
           <div className="md:aspect-[12/16] items-center shadow-xl flex flex-col justify-between  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
-            <div className="pt-10 bg-slate-50 w-[240px] h-[240px] rounded-lg flex justify-center items-center">
+            <div className="pt-10 bg-slate-50 w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  rounded-lg flex justify-center items-center">
               <img
-                className="bg-gray-200 object-cover rounded-full w-[240px] h-[240px] "
+                className="bg-gray-200 object-cover rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  "
                 src={ImageRafael}
                 alt="profile of rafael"
               />
@@ -70,9 +70,9 @@ function CardAbout() {
             </div>
           </div>
           <div className="md:aspect-[12/16] items-center shadow-xl shadow-xl flex flex-col justify-between  xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
-            <div className="pt-10 bg-slate-50 w-[240px] h-[240px] rounded-lg flex justify-center items-center">
+            <div className="pt-10 bg-slate-50 w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  rounded-lg flex justify-center items-center">
               <img
-                className="bg-gray-200 object-top object-cover rounded-full w-[240px] h-[240px]"
+                className="bg-gray-200 object-top object-cover rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px] "
                 src={ImageIlham}
                 alt="profile of ilham"
               />
@@ -117,9 +117,9 @@ function CardAbout() {
             </div>
           </div>
           <div className="md:aspect-[12/16] items-center shadow-xl shadow-xl flex flex-col justify-between xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
-            <div className="pt-10 bg-slate-50 w-[240px] h-[240px] rounded-lg flex justify-center items-center">
+            <div className="pt-10 bg-slate-50 w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  rounded-lg flex justify-center items-center">
               <img
-                className=" object-cover rounded-full w-[240px] h-[240px]"
+                className=" object-cover rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px] "
                 src={ImageDanang}
                 alt=""
               />
@@ -162,9 +162,9 @@ function CardAbout() {
             </div>
           </div>
           <div className="md:aspect-[12/16] items-center shadow-xl shadow-xl flex flex-col justify-between xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
-            <div className="pt-10 bg-slate-50 w-[240px] h-[240px] rounded-lg flex justify-center items-center">
+            <div className="pt-10 bg-slate-50 w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  rounded-lg flex justify-center items-center">
               <img
-                className=" object-cover rounded-full w-[240px] h-[240px]"
+                className=" object-cover rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px] "
                 src={ImageAdit}
                 alt=""
               />
@@ -215,9 +215,9 @@ function CardAbout() {
             </div>
           </div>
           <div className="md:aspect-[12/16] items-center shadow-xl shadow-xl flex flex-col justify-between xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
-            <div className="pt-10 bg-slate-50 w-[240px] h-[240px] rounded-lg flex justify-center items-center">
+            <div className="pt-10 bg-slate-50 w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  rounded-lg flex justify-center items-center">
               <img
-                className=" object-cover rounded-full w-[240px] h-[240px]"
+                className=" object-cover rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px] "
                 src={ImageTania}
                 alt=""
               />
@@ -258,9 +258,9 @@ function CardAbout() {
             </div>
           </div>
           <div className="md:aspect-[12/16] items-center shadow-xl shadow-xl flex flex-col justify-between xl:my-6 lg:w-80 lg:mx-auto lg:my-auto md:my-auto bg-slate-50 rounded-lg shadow-sm flex flex-col ">
-            <div className="pt-10 bg-slate-50 w-[240px] h-[240px] rounded-lg flex justify-center items-center">
+            <div className="pt-10 bg-slate-50 w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px]  rounded-lg flex justify-center items-center">
               <img
-                className=" object-cover rounded-full w-[240px] h-[240px]"
+                className=" object-cover rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:w-[180px] lg:h-[180px] "
                 src={ImageGilang}
                 alt=""
               />
