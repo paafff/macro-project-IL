@@ -17,7 +17,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     if (email !== 'pstar7@mail.com' || password !== '12345') {
-      alert('maaf gagal');
+      alert('maaf, email atau password tidak sesuai');
     } else {
       const newLogin = {
         username: 'patrickStar',
