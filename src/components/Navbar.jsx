@@ -10,7 +10,12 @@ const Navbar = () => {
   const [shadowNavbar, setShadowNavbar] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const user = useSelector((state) => state.login);
+  //versi singkat
+  // const user = useSelector((state) => state.login);
+
+  // versi penjelas
+  const userLogin = (state) => state.login;
+  const user = useSelector(userLogin);
 
   const changeShadowNavbar = () => {
     setShadowNavbar(window.scrollY > 10);
@@ -25,8 +30,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
-        }`}
+      className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${
+        shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
+      }`}
     >
       {/* 
      <nav
@@ -41,7 +47,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="w-36 py-10">
               <Link to="/">
-                <img src={logo} className="py-10" alt='beranibicara' />
+                <img src={logo} className="py-10" alt="beranibicara" />
               </Link>
             </div>
           </div>
@@ -328,7 +334,6 @@ const Navbar = () => {
               >
                 Profil
               </Link>
-
             </div>
           ) : (
             <div className="flex flex-col items-start py-4 shadow-md">
