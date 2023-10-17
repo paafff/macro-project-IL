@@ -7,8 +7,8 @@ import { addLogin } from '../redux/loginSlice';
 import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('pstar7@mail.com');
-  const [password, setPassword] = useState('12345');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   // const [uuid, setUuid] = useState('');
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email !== 'pstar7@mail.com' || password !== '12345') {
+    if (email !== '' || password !== '') {
       alert('Maaf, email/password yang anda masukan tidak sesuai');
     } else {
       const newLogin = {
