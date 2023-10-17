@@ -7,8 +7,8 @@ import { addLogin } from '../redux/loginSlice';
 import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('pstar7@mail.com');
+  const [password, setPassword] = useState('12345');
   // const [uuid, setUuid] = useState('');
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     if (email !== 'pstar7@mail.com' || password !== '12345') {
-      alert('maaf, email atau password tidak sesuai');
+      alert('Maaf, email/password yang anda masukan tidak sesuai');
     } else {
       const newLogin = {
         username: 'patrickStar',
@@ -45,11 +45,11 @@ const LoginForm = () => {
             </label>
             <input
               type="text"
-              value={email}
+              // value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500  w-full p-2  "
               placeholder="name@email.com"
-              required
+              // required
             />
           </div>
 
@@ -62,7 +62,7 @@ const LoginForm = () => {
               onChange={(e) => setPassword(e.target.value)}
               className=" bg-customGray border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500  w-full p-2  "
               placeholder="********"
-              required
+              // required
             />
           </div>
           <hr className="py-1" />
