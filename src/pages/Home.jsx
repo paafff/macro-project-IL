@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from './Layout';
 
+import { motion } from 'framer-motion'
+
 import Section1Home from '../components/Section1Home'
 import AlurPengaduanHome from '../components/AlurPengaduanHome'
 // import Footer from '../components/Footer';
@@ -9,7 +11,7 @@ import FAQ from '../components/FAQ';
 const Home = () => {
 
   return (
-    <Layout>
+    <Layout >
 
       <Section1Home />
 

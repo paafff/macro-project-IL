@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useState } from 'react'
 
+import { motion } from 'framer-motion'
 
 const FAQ = () => {
     const [FAQ1, setFAQ1] = useState(false)
@@ -11,7 +12,17 @@ const FAQ = () => {
     const [FAQ5, setFAQ5] = useState(false)
 
     return (
-        <div className='min-h-fit w-full flex justify-center pb-24 pt-16 items-center flex-col p-2'>
+        <motion.div
+
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
+
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+
+            className='min-h-fit w-full flex justify-center pb-24 pt-16 items-center flex-col p-2'>
 
             <h1 className='text-2xl xl:text-3xl text-slate-800 font-bold mb-8 pb-2.5 inline-block border-b-4 border-dashed border-red-700 w-fit'>FAQ</h1>
 
@@ -85,7 +96,7 @@ const FAQ = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

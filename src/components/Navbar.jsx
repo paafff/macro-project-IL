@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import logo from './../assets/image/terang.png';
 import { useSelector } from 'react-redux';
 // import notifDropdown from './notifDropdown';
 
 import { MdOutlineNotificationsActive, MdOutlineSms } from 'react-icons/md';
+
+const buttonVariants = {
+  open: { rotate: 180 },
+  closed: { rotate: 0 },
+}
+
 
 const Navbar = () => {
   const [shadowNavbar, setShadowNavbar] = useState(false);
@@ -25,6 +32,9 @@ const Navbar = () => {
 
   return (
     <nav
+
+
+
       className={`bg-customGray w-full fixed duration-300 z-10 font-fontMontserrat ${shadowNavbar ? ' shadow-md shadow-slate-300 pt-4 pb-2.5' : 'py-2'
         }`}
     >
@@ -47,8 +57,13 @@ const Navbar = () => {
           </div>
 
           {/* Tampilan menu untuk perangkat mobile */}
-          <div className="md:hidden flex items-center">
-            <button
+          <div
+            className="lg:hidden flex items-center">
+            <motion.button
+
+              animate={menuOpen ? "open" : "closed"}
+              variants={buttonVariants}
+
               className="text-gray-800 hover:bg-red-700 hover:text-white px-3 py-2 rounded-md"
               onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -68,12 +83,12 @@ const Navbar = () => {
                   }
                 ></path>
               </svg>
-            </button>
+            </motion.button>
           </div>
 
           {/* Kanan (untuk perangkat desktop) */}
           {user[0] ? (
-            <div className="hidden md:flex flex-grow items-center justify-end space-x-14">
+            <div className="hidden lg:flex flex-grow items-center justify-end space-x-14">
               <Link
                 to={`/report`}
                 className="py-1
@@ -299,7 +314,13 @@ const Navbar = () => {
 
       {/* Menu dropdown untuk perangkat mobile */}
       {menuOpen && (
-        <div className="md:hidden">
+        <motion.div
+
+          initial={{ y: -100 }}
+          animate={{ y: menuOpen ? 0 : -100 }}
+          transition={{ type: "spring", stiffness: 150, damping: 20 }}
+
+          className="lg:hidden">
           {user[0] ? (
             <div className="flex flex-col items-start py-4 shadow-md">
               <Link
@@ -354,9 +375,10 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-        </div>
-      )}
-    </nav>
+        </motion.div>
+      )
+      }
+    </nav >
   );
 };
 

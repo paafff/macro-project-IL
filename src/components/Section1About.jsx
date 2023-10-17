@@ -1,8 +1,20 @@
 import React from 'react'
 
+import { motion } from 'framer-motion'
+
 const Section1About = () => {
     return (
-        <div className='min-h-screen pt-32 xl:pt-0 flex flex-col items-center justify-center mb-16'>
+        <motion.div
+
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
+
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+
+            className='min-h-screen pt-32 xl:pt-0 flex flex-col items-center justify-center mb-16'>
 
             {/* text section pertama */}
             <div className="first-text mb-4 flex justify-center items-center">
@@ -13,7 +25,7 @@ const Section1About = () => {
             <div className="second-text flex flex-col items-center p-4 md:w-3/4 xl:w-1/2 xl:mt-12">
                 <p className='text-lg xl:text-2xl font-regular text-gray-800 indent-16 text-justify xl:leading-loose'>Kami adalah Berani Bicara, <span className='border-b-2 border-red-700 pl-2'> sebuah wadah bagi mereka yang mencari keadilan dan dukungan dalam menghadapi pelecehan seksual. </span> Misi kami adalah melindungi, mendukung, dan mencerahkan individu yang telah mengalami pengalaman yang menyakitkan ini. Kami percaya bahwa setiap orang berhak hidup bebas dari ketakutan, dan kami berkomitmen untuk membantu menciptakan lingkungan yang aman dan adil bagi semua. Sebagai komunitas dukungan yang peduli, kami berusaha untuk menghapus stigma seputar pelecehan seksual dan membangun kesadaran tentang isu-isu ini. Di Berani Bicara, kami mendengarkan cerita Anda, kami memberikan dukungan, dan kami bertindak bersama-sama untuk menuju perubahan positif. Bergabunglah dengan kami dalam perjuangan ini, karena bersama-sama kita dapat membawa perubahan yang lebih baik.</p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
