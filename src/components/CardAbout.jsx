@@ -1,5 +1,5 @@
 import React from 'react';
-// import ImageProfile from '../assets/image/profile-male.png';
+import { motion } from 'framer-motion';
 
 import ImageRafael from '../assets/image/profile_picture/Rafael_Kesma.png';
 import ImageIlham from '../assets/image/profile_picture/ilham(2).png';
@@ -22,7 +22,17 @@ function CardAbout() {
 
   return (
     <>
-      <div className="w-full flex flex-col ">
+      <motion.div
+
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // exit={{ opacity: 0 }}
+
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+
+        className="w-full flex flex-col ">
         <p className="text-xl xl:text-4xl inline-block w-fit m-auto font-medium leading-tight font-semibold border-b-4 pb-2.5 border-red-700 border-dashed">
           Tim Pengembang
         </p>
@@ -305,7 +315,7 @@ function CardAbout() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

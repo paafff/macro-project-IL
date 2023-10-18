@@ -1,4 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
+
+import { motion } from 'framer-motion';
+
 import { useDispatch } from 'react-redux';
 import { addReport } from './../redux/reportSlice';
 import { useNavigate } from 'react-router-dom';
@@ -242,7 +245,9 @@ const ReportForm = () => {
 
   return (
     <>
-      <div className="mx-auto w-full lg:w-3/4 xl:w-1/2 py-32">
+      <motion.div
+
+        className="mx-auto w-full lg:w-3/4 xl:w-1/2 py-32">
         {/* <!--Title--> */}
         {/* <h2 className="font-sans font-bold break-normal text-gray-900  py-4 text-2xl text-center">
             Form Pengaduan
@@ -1183,7 +1188,7 @@ const ReportForm = () => {
           </form>
         </div>
         {/* <!--/Card--> */}
-      </div>
+      </motion.div>
     </>
   );
 };

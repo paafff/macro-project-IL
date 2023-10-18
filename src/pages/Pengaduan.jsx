@@ -20,7 +20,7 @@ const Pengaduan = () => {
   useEffect(() => {
     if (!user[0]) {
       // Perubahan disini, gunakan === untuk perbandingan
-      alert('maaf login dulu yah');
+      alert('Akses tidak sah, harap login terlebih dahulu');
       navigate('/auth');
     }
   }, [user, navigate]);

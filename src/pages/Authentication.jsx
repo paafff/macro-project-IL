@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import { motion } from 'framer-motion';
+
 import Layout from './Layout';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/RegisterForm';
@@ -14,7 +17,13 @@ const Authentication = () => {
   return (
     <Layout>
       <>
-        <div className=" flex justify-center items-center min-h-screen  ">
+        <motion.div
+
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          exit={{ x: window.innerWidth, transition: { duration: 0.2 } }}
+
+          className=" flex justify-center items-center min-h-screen  ">
           <div className="bg-none place-items-center flex flex-col md:flex-row justify-evenly w-full max-w-6xl p-4 bg-none  rounded-lg  sm:p-6 md:p-8">
             <div className="relative">
               <img
@@ -36,7 +45,7 @@ const Authentication = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </>
     </Layout>
   );
